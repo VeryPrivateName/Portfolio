@@ -43,21 +43,21 @@ export default function Model(props) {
       onPointerOver={e => setHover(true)}
       onPointerOut={e => setHover(false)}
     >
-      <scene name="Scene">
+      <scene name='Scene'>
         <group
-          name="fbCamObj"
+          name='fbCamObj'
           position={[20.49, 0.57, 0.47]}
           rotation={[1.62, 0.03, -1.56]}
         />
         <group
-          name="fbCamObj001"
+          name='fbCamObj001'
           position={[-0.26, 1.03, 19.25]}
           rotation={[1.52, 0, 0.01]}
         />
         <mesh
           material={materials.kt_facebuilder_material}
           geometry={nodes.FaceBuilderHead.geometry}
-          name="FaceBuilderHead"
+          name='FaceBuilderHead'
         />
       </scene>
     </group>

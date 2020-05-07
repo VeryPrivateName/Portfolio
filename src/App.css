@@ -22,6 +22,11 @@ body {
   background-color: gray;
   color: #333;
 }
+
+html {
+  font-size: 16px;
+}
+
 /* Landing  */
 
 canvas {
@@ -31,46 +36,53 @@ canvas {
   height: 100%;
 }
 
-.landingContainer {
-  min-height: 100vh;
-  display: flex;
-}
-.textHolder {
-  display:flex;
-  flex-flow: column;
-}
-.intro {
-  display: flex;
-  flex-flow: column;
+.gridy {
+  display: grid;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 1rem;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
   align-items: center;
-  justify-content: center;
+  justify-items: start;
   background: red;
 }
-.h1land {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 800;
-    font-size: 2em;
-    transform: translate3d(-50%, 0, 0);
-    margin: 0;
-    color: black;
-    line-height: 0.9em;
-    letter-spacing: -5px;
-    text-align: center;
-  }
-a.top-right {
-  top: 60px;
-  right: 60px;
+
+.holder {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0 2rem;
+  background: #f5f6f7;
+  justify-content: center;
 }
 
-a.bottom-right {
-  bottom: 60px;
-  right: 60px;
+.buttons {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 0.1rem;
+}
+.button {
+  display: block;
+  padding: 0.85rem 1.85rem;
+  margin-right: 1rem;
+  border-radius: 5px 15px;
 }
 
-/*  */
+/* Fonts */
+
+.xlarge {
+  font-size: 4rem;
+}
+.large {
+  font-size: 3rem;
+}
+.lead {
+  font-size: 1.5rem;
+}
+.normal {
+  font-size: 1rem;
+}
 
 a {
   color: var(--primary-color);
@@ -97,8 +109,13 @@ img {
   padding: 0 2rem;
 }
 
+.border {
+  border: 8px solid green;
+  min-height: 100vh;
+}
+
 /* Text Styles*/
-.x-large {
+/* .x-large {
   font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -113,7 +130,7 @@ img {
 .lead {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-}
+} */
 
 .text-center {
   text-align: center;
@@ -192,6 +209,9 @@ img {
 }
 .py-1 {
   padding: 1rem 0;
+}
+.pBottom {
+  padding-bottom: 1rem;
 }
 .py-2 {
   padding: 2rem 0;
@@ -440,7 +460,7 @@ table th {
   }
 
   /* Text Styles */
-  .x-large {
+  /* .x-large {
     font-size: 3rem;
   }
 
@@ -450,7 +470,7 @@ table th {
 
   .lead {
     font-size: 1rem;
-  }
+  } */
 
   /* Navbar */
   .navbar {

@@ -1,7 +1,6 @@
 import React, { Fragment, Suspense, useRef, useState, useRender } from 'react';
 import { Canvas, useThree, useFrame } from 'react-three-fiber';
 
-// import Scene from './Scene';
 import FaceV1 from './Facev1';
 
 const FaceLogo = () => {

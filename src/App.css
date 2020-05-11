@@ -84,13 +84,18 @@ canvas {
   font-size: 1rem;
 }
 
-a {
+/* a {
   color: var(--primary-color);
   text-decoration: none;
 }
 
 a:hover {
   color: #666;
+} */
+
+.linkStyle {
+  color: var(--light-color);
+  text-decoration: none;
 }
 
 ul {
@@ -111,8 +116,13 @@ img {
 
 .border {
   border: 8px solid green;
-  min-height: 100vh;
 }
+
+.decoLine {
+  max-width: 100px;
+  /* margin: -2rem 0; */
+}
+
 
 /* Text Styles*/
 /* .x-large {
@@ -251,6 +261,7 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
+  min-height: 100vh;
 }
 
 .grid-3 {

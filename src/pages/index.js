@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import '../App.css';
-import svg from '../images/wavy.svg';
+import '../App.scss';
 
 import FaceLogo from '../components/scene/FaceLogo';
 
@@ -15,16 +14,12 @@ const IndexPage = () => {
           I am a Frontend developer based in Berlin.
         </h2>
         <div className='buttons'>
-          <div className='button btn-dark'>
-            <Link to='/projects' className='linkStyle'>
-              <p>Projects</p>
-            </Link>
-          </div>
-          <div className='button btn-dark'>
-            <Link to='/about' className='linkStyle'>
-              About
-            </Link>
-          </div>
+          <Link to='/projects' className='linkStyle'>
+            <div className='button btn-dark'>Projects</div>
+          </Link>
+          <Link to='/about' className='linkStyle'>
+            <div className='button btn-dark'>About</div>
+          </Link>
         </div>
       </div>
       <FaceLogo />

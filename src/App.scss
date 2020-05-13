@@ -19,8 +19,8 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: gray;
   color: #333;
+  border: 8px solid black;
 }
 
 html {
@@ -114,9 +114,9 @@ img {
   padding: 0 2rem;
 }
 
-.border {
-  border: 8px solid green;
-}
+// .border {
+//   border: 8px solid green;
+// }
 
 .decoLine {
   max-width: 100px;

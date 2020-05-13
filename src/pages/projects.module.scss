@@ -1,0 +1,56 @@
+.grid {
+  display: grid;
+  justify-items: center;
+}
+.gradient {
+  max-width: 1200px;
+  margin-bottom: 2rem;
+  box-shadow: 0 3px 4px rgba(37, 37, 37, 0.2), 0 1px 6px rgba(65, 63, 63, 0.25);
+  background: linear-gradient(rgba(143, 148, 251, 0.7), #ef93ec);
+  border-radius: 3px;
+}
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 3rem;
+  color: white;
+  width: 100%;
+  //   justify-self: center;
+}
+.projectImage {
+  width: 100%;
+  align-self: start;
+}
+.projectInfo {
+  width: 100%;
+  align-self: start;
+}
+
+.mb {
+  margin-bottom: 0.75rem;
+}
+
+.mtitle {
+  padding: 6rem 0rem;
+}
+
+.ulSt {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.ulSt li::before {
+  content: '\25A3';
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-right: 0.35rem;
+  // margin-left: 0.85rem;
+}
+.box {
+  margin-right: 1rem;
+}

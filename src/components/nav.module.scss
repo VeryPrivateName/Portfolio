@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: black;
+}
+.navItem {
+    padding-right: 5rem;
+    text-decoration: none;
+}
+
+
+.sidebar {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 25%; 
+    min-height: 400px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+  }
+
+.pad1 {
+    padding-bottom: 1rem;
+}
+.imgNav {
+    width: 100px;
+    height: 100%;
+}

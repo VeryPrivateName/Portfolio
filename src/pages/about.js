@@ -1,10 +1,13 @@
 import React from 'react';
+import Layout from '../components/Layout';
 
 const about = () => {
   return (
-    <div className='border'>
-      <h1>About</h1>
-    </div>
+    <Layout>
+      <div>
+        <h1>About</h1>
+      </div>
+    </Layout>
   );
 };
 

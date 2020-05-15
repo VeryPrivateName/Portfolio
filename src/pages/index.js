@@ -8,10 +8,6 @@ import FaceLogo from '../components/scene/FaceLogo';
 const IndexPage = () => {
   return (
     <div className='grid-2 text-dark'>
-      <div className='corner-container__bottom-left'></div>
-      <div className='corner-container__bottom-right'></div>
-      <div className='corner-container__top-left'></div>
-      <div className='corner-container__top-right'></div>
       <div className='holder'>
         <h1 className='xlarge pBottom primary-color'>Name</h1>
         <h2 className='large pBottom'>

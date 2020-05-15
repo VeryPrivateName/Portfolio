@@ -9,6 +9,7 @@
   --gray2-color: #767570;
   --light-color: #FCF8F0;
   --light1-color:#E5E0D6;
+  --light2-color:rgb(241, 237, 228);
   --danger-color: #dc3545;
   --success-color: #28a745;
 }
@@ -40,32 +41,6 @@ canvas {
   height: 100%;
 }
 
-.corner-container {
-	position: absolute;
-	z-index: 5;
-	background: #023B54;
-	box-shadow: 0 0 0 10px #eae6e1;
-	width: 1.875rem;
-	height: 1.875rem;
-}
-.corner-container__bottom-left {
-	left: 0rem;
-	bottom: 0rem;
-	width: 1.875rem;
-}
-.corner-container__bottom-right {
-	right: -3.75rem;
-	bottom: -3.75rem;
-}
-.corner-container__top-left {
-	top: -3.75rem;
-	left: -3.75rem;
-	width: 1.875rem;
-}
-.corner-container__top-right {
-	right: -3.75rem;
-	top: -3.75rem;
-}
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

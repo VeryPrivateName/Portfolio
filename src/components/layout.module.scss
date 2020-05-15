@@ -1,5 +1,7 @@
 .grid {
-    display: flex;
-    flex-flow: column;
+    display: grid;
+    justify-items: center;
+    position: relative;
+    background-color: var(--light1-color);
 }
 

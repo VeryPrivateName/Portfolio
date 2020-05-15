@@ -35,6 +35,7 @@
 
 .mtitle {
   padding: 6rem 0rem;
+  color: var(--primaryL-color);
 }
 
 .ulSt {
@@ -45,7 +46,7 @@
 
 .ulSt li::before {
   content: '\25A3';
-  color: red;
+  color: var(--primaryL-color);
   font-weight: bold;
   display: inline-block;
   width: 1rem;

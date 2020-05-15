@@ -8,6 +8,7 @@ const projects = () => {
   return (
     <Layout>
       <div className={Style.grid}>
+        {/* Gal isimt title kadangi navigacijoje jau matosi kur randiesi */}
         <h1 className={Style.mtitle}>Projects</h1>
         <div className={Style.gradient}>
           <div className={Style.project}>

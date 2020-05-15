@@ -1,6 +1,7 @@
 .grid {
   display: grid;
   justify-items: center;
+  min-height: calc(100vh - 16px);
 }
 .gradient {
   max-width: 1200px;

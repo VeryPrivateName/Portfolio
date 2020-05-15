@@ -5,24 +5,27 @@
     align-items: center;
     height: 100px;
     color: black;
+    position: sticky;
+    top:0;
+    // background: var(--gray2-color)
 }
 .navItem {
-    padding-right: 5rem;
+    padding: 0rem 5rem;
     text-decoration: none;
+    font-size: 1.25rem;
+    transition: all 0.25s ease-out;
 }
 
+.navItem:hover {
+    color: #3A899C;
+    
+    transition: all 0.25s ease-out;
+}
 
-.sidebar {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 25%; 
-    min-height: 400px;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-  }
+.linkStyle {
+    color: var(--dark-color);
+    text-decoration: none;
+}
 
 .pad1 {
     padding-bottom: 1rem;
@@ -30,4 +33,12 @@
 .imgNav {
     width: 100px;
     height: 100%;
+}
+
+.activeNav {
+    // color: var(--primary-color);
+    transform: scale(1.2);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
 }

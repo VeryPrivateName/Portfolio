@@ -18,7 +18,6 @@
 
 .navItem:hover {
     color: #3A899C;
-    
     transition: all 0.25s ease-out;
 }
 
@@ -36,9 +35,12 @@
 }
 
 .activeNav {
-    // color: var(--primary-color);
     transform: scale(1.2);
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    // border-left: 1px solid black;
+    // border-right: 1px solid black;
+    border-width: 1px;
+    border-style: solid;
+    border-image-source: linear-gradient(to bottom, #af0426, rgba(0, 0, 0, 0));
+    border-image-slice: 1 100%;
 
 }

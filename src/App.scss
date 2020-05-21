@@ -4,12 +4,14 @@
 :root {
   --primary-color: #023B54;
   --primaryL-color: #094A64;
+  --primaryL2-color: #3A899C;
   --dark-color: #45443F;
   --gray1-color:#62615C;
   --gray2-color: #767570;
   --light-color: #FCF8F0;
   --light1-color:#E5E0D6;
   --light2-color:rgb(241, 237, 228);
+  --paint-color:#af0426;
   --danger-color: #dc3545;
   --success-color: #28a745;
 }
@@ -30,6 +32,24 @@ body {
 
 html {
   font-size: 16px;
+}
+
+.iconsProf {
+  vertical-align: middle;
+  color: var(--dark-color);
+  font-size: 1.5rem;
+}
+.iconsCont {
+  vertical-align: middle;
+  color: var(--dark-color);
+  font-size: 2rem;
+  transition: all 0.25s ease-out;
+
+}
+.iconsCont:hover {
+  color: var(--primaryL2-color);
+  font-size: 2.5rem;
+  transition: all 0.25s ease-out;
 }
 
 /* Landing  */
@@ -80,6 +100,12 @@ canvas {
   margin-right: 1rem;
   border-radius: 5px 15px;
   color: var(--light-color);
+  transition: all 0.25s ease-out;
+}
+.button:hover {
+  transform: scale(1.1);
+  color: var(--primaryL2-color);
+  transition: all 0.25s ease-out;
 }
 
 .primary-color {
@@ -114,6 +140,7 @@ a:hover {
   color: var(--light-color);
   text-decoration: none;
 }
+
 
 ul {
   list-style: none;

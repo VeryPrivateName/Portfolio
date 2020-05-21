@@ -17,7 +17,7 @@
 }
 
 .navItem:hover {
-    color: #3A899C;
+    color: var(--primaryL2-color);
     transition: all 0.25s ease-out;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .activeNav {
-    transform: scale(1.2);
+    transform: scale(1.1);
     // border-left: 1px solid black;
     // border-right: 1px solid black;
     border-width: 1px;

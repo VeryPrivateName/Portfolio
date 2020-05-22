@@ -3,16 +3,15 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    color: black;
+    height: 150px;
+    color: var(--dark-color);
     position: sticky;
-    top:0;
     // background: var(--gray2-color)
 }
 .navItem {
     padding: 0rem 5rem;
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     transition: all 0.25s ease-out;
 }
 
@@ -35,12 +34,11 @@
 }
 
 .activeNav {
-    transform: scale(1.1);
     // border-left: 1px solid black;
     // border-right: 1px solid black;
     border-width: 1px;
     border-style: solid;
     border-image-source: linear-gradient(to bottom, #af0426, rgba(0, 0, 0, 0));
     border-image-slice: 1 100%;
-
+    padding: 0 -3rem;
 }

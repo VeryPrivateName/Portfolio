@@ -1,5 +1,9 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+
+import Link from 'gatsby-plugin-transition-link';
+
+// import { Link } from 'gatsby';
 
 import '../App.scss';
 
@@ -14,12 +18,30 @@ const IndexPage = () => {
           I am a Frontend developer based in Berlin.
         </h2>
         <div className='buttons'>
-          <Link to='/projects' className='linkStyle'>
+          {/* <Link to='/projects' className='linkStyle'>
             <div className='button btn-dark'>Projects</div>
-          </Link>
-          <Link to='/about' className='linkStyle'>
+          </Link> */}
+          {/* <Link to='/about' className='linkStyle'>
             <div className='button btn-dark'>About</div>
-          </Link>
+          </Link> */}
+          <AniLink
+            className='linkStyle'
+            cover
+            to='/projects'
+            direction='top'
+            bg='#023B54'
+          >
+            <div className='button btn-dark'>About</div>
+          </AniLink>
+          <AniLink
+            className='linkStyle'
+            cover
+            to='/about'
+            direction='top'
+            bg='#023B54'
+          >
+            <div className='button btn-dark'>About</div>
+          </AniLink>
         </div>
       </div>
       <FaceLogo />

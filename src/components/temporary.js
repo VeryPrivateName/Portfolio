@@ -12,37 +12,25 @@ const Nav = () => {
   return (
     <div>
       <ul className={navStyle.container}>
-        <AniLink
+        <Link
           className={navStyle.linkStyle}
           activeClassName={navStyle.activeNav}
-          cover
           to='/projects'
-          direction='top'
-          bg='#023B54'
         >
           <li className={navStyle.navItem}>Projects</li>
-        </AniLink>
-        <AniLink
-          className={navStyle.linkStyle}
-          cover
-          to='/'
-          direction='top'
-          bg='#023B54'
-        >
+        </Link>
+        <Link className={navStyle.linkStyle} to='/'>
           <li className={navStyle.navItem}>
             <FaceLogo />
           </li>
-        </AniLink>
-        <AniLink
+        </Link>
+        <Link
           className={navStyle.linkStyle}
           activeClassName={navStyle.activeNav}
-          cover
           to='/about'
-          direction='top'
-          bg='#023B54'
         >
           <li className={navStyle.navItem}>About</li>
-        </AniLink>
+        </Link>
       </ul>
     </div>
   );

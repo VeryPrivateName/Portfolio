@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Layout from '../components/Layout';
 import Style from './about.module.scss';
 
@@ -55,7 +56,7 @@ const about = () => {
                   </p>
                   <FaChess />
                   <p>
-                    <span className={Style.colorspan}>Personality:</span>{' '}
+                    <span className={Style.colorspan}>Personality:</span>
                     hungry, determined, passionate, punctual, adaptive and
                     collaborative.
                   </p>

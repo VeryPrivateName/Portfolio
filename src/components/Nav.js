@@ -15,18 +15,19 @@ const Nav = () => {
         <AniLink
           className={navStyle.linkStyle}
           activeClassName={navStyle.activeNav}
-          cover
+          fade
+          duration={0.5}
           to='/projects'
           direction='top'
-          bg='#023B54'
         >
           <li className={navStyle.navItem}>Projects</li>
         </AniLink>
         <AniLink
           className={navStyle.linkStyle}
           cover
+          duration={1.5}
           to='/'
-          direction='top'
+          direction='up'
           bg='#023B54'
         >
           <li className={navStyle.navItem}>
@@ -36,10 +37,10 @@ const Nav = () => {
         <AniLink
           className={navStyle.linkStyle}
           activeClassName={navStyle.activeNav}
-          cover
+          fade
+          duration={0.5}
           to='/about'
           direction='top'
-          bg='#023B54'
         >
           <li className={navStyle.navItem}>About</li>
         </AniLink>

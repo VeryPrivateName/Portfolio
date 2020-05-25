@@ -18,26 +18,22 @@ const IndexPage = () => {
           I am a Frontend developer based in Berlin.
         </h2>
         <div className='buttons'>
-          {/* <Link to='/projects' className='linkStyle'>
-            <div className='button btn-dark'>Projects</div>
-          </Link> */}
-          {/* <Link to='/about' className='linkStyle'>
-            <div className='button btn-dark'>About</div>
-          </Link> */}
           <AniLink
             className='linkStyle'
             cover
+            duration={1.5}
             to='/projects'
-            direction='top'
+            direction='down'
             bg='#023B54'
           >
-            <div className='button btn-dark'>About</div>
+            <div className='button btn-dark'>Projects</div>
           </AniLink>
           <AniLink
             className='linkStyle'
             cover
+            duration={1.5}
             to='/about'
-            direction='top'
+            direction='down'
             bg='#023B54'
           >
             <div className='button btn-dark'>About</div>

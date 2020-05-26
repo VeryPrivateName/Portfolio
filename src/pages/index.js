@@ -13,7 +13,7 @@ const IndexPage = () => {
   return (
     <div className='grid-2 text-dark'>
       <div className='holder'>
-        <h1 className='xlarge pBottom primary-color'>Ignas</h1>
+        <h1 className='xlarge pBottom colorpaint'>Ignas</h1>
         <h2 className='large pBottom defaultFont'>
           I am a Frontend developer based in Berlin.
         </h2>

@@ -71,7 +71,13 @@
   padding: 6rem 0rem;
   margin: 3rem 0rem;
   color: var(--primary-color);
-  font-size: 3rem
+  font-size: 3rem;
+  transition: color 1.5s ease-in;
+}
+
+.mtitle:hover {
+  transition: color 1.5s ease-in;
+  color: #000002;
 }
 
 .m1 {
@@ -115,7 +121,7 @@
 .colorspanMail {
   color: var(--primary-color);
   // color: #AF0426;
-  font-weight: 800;
+  font-weight: 850;
   font-size: 1.1rem;
 }
 

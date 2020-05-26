@@ -32,7 +32,7 @@ body {
   font-family: 'Fira Sans', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  color: #333;
+  color: var(--dark-color);
   border: 8px solid var(--primary-color);
 }
 h1,
@@ -51,6 +51,14 @@ html {
   font-size: 16px;
 }
 
+.colorpaint {
+  transition: color 1.5s ease-in;
+  color: var(--primary-color);
+}
+.colorpaint:hover {
+  transition: color 1.5s ease-in;
+  color: #000002;
+}
 .iconsProf {
   vertical-align: middle;
   color: var(--dark-color);
@@ -125,9 +133,6 @@ canvas {
   transition: all 0.25s ease-out;
 }
 
-.primary-color {
-  color:var(--primary-color)
-}
 
 /* Fonts */
 

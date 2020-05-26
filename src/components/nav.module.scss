@@ -3,15 +3,14 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 128px;
     color: var(--dark-color);
-    position: sticky;
     // background: var(--gray2-color)
 }
 .navItem {
     padding: 0rem 5rem;
     text-decoration: none;
-    font-size: 1.35rem;
+    font-size: 1.45rem;
     transition: all 0.25s ease-out;
 }
 

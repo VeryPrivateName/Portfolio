@@ -3,7 +3,9 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Style from './about.module.scss';
 
-import peep from '../images/peep.svg';
+// import peep from '../images/peep.svg';
+
+import peep4 from '../images/IGNO AVATAR-04.png';
 
 import { IconContext } from 'react-icons';
 import {
@@ -23,7 +25,7 @@ const about = () => {
         <h1 className={Style.mtitle}>Frontend Developer</h1>
         <div className={Style.gridIntro}>
           <div className={Style.graphic}>
-            <img src={peep}></img>
+            <img src={peep4}></img>
           </div>
           <div>
             <div className={Style.card}>
@@ -56,7 +58,7 @@ const about = () => {
                   </p>
                   <FaChess />
                   <p>
-                    <span className={Style.colorspan}>Personality:</span>
+                    <span className={Style.colorspan}>Personality:</span>{' '}
                     hungry, determined, passionate, punctual, adaptive and
                     collaborative.
                   </p>

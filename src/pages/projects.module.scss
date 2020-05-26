@@ -5,7 +5,7 @@
 }
 .gradient {
   max-width: 1200px;
-  margin-bottom: 2rem;
+  margin: 3rem 0rem;
   box-shadow: 0 3px 4px rgba(37, 37, 37, 0.2), 0 1px 6px rgba(65, 63, 63, 0.25);
   background: linear-gradient(rgba(143, 148, 251, 0.7), #ef93ec);
   border-radius: 3px;
@@ -35,7 +35,9 @@
 
 .mtitle {
   padding: 6rem 0rem;
+  margin: 3rem 0rem;
   color: var(--primaryL-color);
+  font-size: 3rem
 }
 
 .ulSt {

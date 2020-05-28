@@ -18,7 +18,6 @@ const Nav = () => {
           fade
           duration={0.5}
           to='/projects'
-          direction='top'
         >
           <li className={navStyle.navItem}>Projects</li>
         </AniLink>
@@ -40,7 +39,6 @@ const Nav = () => {
           fade
           duration={0.5}
           to='/about'
-          direction='top'
         >
           <li className={navStyle.navItem}>About</li>
         </AniLink>

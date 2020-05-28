@@ -42,3 +42,13 @@
     border-image-slice: 1 100%;
     padding: 0 -3rem;
 }
+@media screen and (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 128px;
+        color: var(--dark-color);
+    }
+}

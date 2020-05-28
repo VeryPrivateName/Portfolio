@@ -140,3 +140,22 @@
   text-decoration: none;
   color: var(--dark-color);
 }
+
+@media screen and (max-width: 800px) {
+  .gridy {
+    grid-column-gap: 0.5rem;
+    grid-template-columns: 30px auto;
+    grid-template-rows: repeat(5, 40px);
+  }
+  .contactholder {
+    grid-column-gap: 0.5rem;
+    grid-template-columns: 30px 30px auto;
+    grid-template-rows: 40px;
+  }
+  .gridIntro {
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
+    margin: 3rem 0rem;
+  }
+}
+

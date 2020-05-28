@@ -40,7 +40,9 @@ const IndexPage = () => {
           </AniLink>
         </div>
       </div>
-      <FaceLogo />
+      <div className='holder2'>
+        <FaceLogo />
+      </div>
     </div>
   );
 };

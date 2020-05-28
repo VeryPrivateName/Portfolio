@@ -1,11 +1,13 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import Layout from '../components/Layout';
 import Style from './about.module.scss';
 
 // import peep from '../images/peep.svg';
 
-import peep4 from '../images/IGNO AVATAR-04.png';
+// import peep4 from '../images/IGNO AVATAR-04.png';
 
 import { IconContext } from 'react-icons';
 import {
@@ -18,14 +20,26 @@ import {
   FaGithub,
 } from 'react-icons/fa';
 
-const about = () => {
+export const pageQuery = graphql`
+  query {
+    imageOne: file(relativePath: { eq: "IGNOAVATAR-04.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`;
+
+const about = props => {
   return (
     <Layout>
       <div className={Style.grid}>
         <h1 className={Style.mtitle}>Frontend Developer</h1>
         <div className={Style.gridIntro}>
           <div className={Style.graphic}>
-            <img src={peep4}></img>
+            <Img fluid={props.data.imageOne.childImageSharp.fluid} />
           </div>
           <div>
             <div className={Style.card}>
@@ -35,28 +49,28 @@ const about = () => {
                 }}
               >
                 <div className={Style.gridy}>
-                  <FaChild />
+                  <FaChild className={Style.gridyCenter} />
                   <p>
                     <span className={Style.colorspan}>Who:</span> Ignas, a
                     Lithuanian Frontend developer based in Berlin.
                   </p>
-                  <FaFire />
+                  <FaFire className={Style.gridyCenter} />
                   <p>
                     <span className={Style.colorspan}>Passions:</span> all
                     things technology, music, gym, history, traveling and - very
                     much so - video games.
                   </p>
-                  <FaCrosshairs />
+                  <FaCrosshairs className={Style.gridyCenter} />
                   <p>
                     <span className={Style.colorspan}>Motto:</span> life is too
                     short for bad websites.
                   </p>
-                  <FaSignature />
+                  <FaSignature className={Style.gridyCenter} />
                   <p>
                     <span className={Style.colorspan}>Languages:</span> English,
                     Lithuanian, Russian and some German.
                   </p>
-                  <FaChess />
+                  <FaChess className={Style.gridyCenter} />
                   <p>
                     <span className={Style.colorspan}>Personality:</span>{' '}
                     hungry, determined, passionate, punctual, adaptive and

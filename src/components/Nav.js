@@ -10,8 +10,8 @@ import FaceLogo from '../components/scene/FaceLogo';
 
 const Nav = () => {
   return (
-    <div>
-      <ul className={navStyle.container}>
+    <div className={navStyle.container}>
+      <div className={navStyle.navItem1}>
         <AniLink
           className={navStyle.linkStyle}
           activeClassName={navStyle.activeNav}
@@ -19,8 +19,10 @@ const Nav = () => {
           duration={0.5}
           to='/projects'
         >
-          <li className={navStyle.navItem}>Projects</li>
+          Projects
         </AniLink>
+      </div>
+      <div className={navStyle.navItem2}>
         <AniLink
           className={navStyle.linkStyle}
           cover
@@ -29,10 +31,10 @@ const Nav = () => {
           direction='up'
           bg='#023B54'
         >
-          <li className={navStyle.navItem}>
-            <FaceLogo />
-          </li>
+          <FaceLogo />
         </AniLink>
+      </div>
+      <div className={navStyle.navItem3}>
         <AniLink
           className={navStyle.linkStyle}
           activeClassName={navStyle.activeNav}
@@ -40,9 +42,9 @@ const Nav = () => {
           duration={0.5}
           to='/about'
         >
-          <li className={navStyle.navItem}>About</li>
+          About
         </AniLink>
-      </ul>
+      </div>
     </div>
   );
 };

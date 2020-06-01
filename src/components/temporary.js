@@ -37,3 +37,42 @@ const Nav = () => {
 };
 
 export default Nav;
+
+const Nav = () => {
+  return (
+    <div>
+      <div className={navStyle.container}>
+        <AniLink
+          className={navStyle.linkStyle}
+          activeClassName={navStyle.activeNav}
+          fade
+          duration={0.5}
+          to='/projects'
+        >
+          <div className={navStyle.navItem1}>Projects</div>
+        </AniLink>
+        <AniLink
+          className={navStyle.linkStyle}
+          cover
+          duration={1.5}
+          to='/'
+          direction='up'
+          bg='#023B54'
+        >
+          <div className={navStyle.navItem2}>
+            <FaceLogo />
+          </div>
+        </AniLink>
+        <AniLink
+          className={navStyle.linkStyle}
+          activeClassName={navStyle.activeNav}
+          fade
+          duration={0.5}
+          to='/about'
+        >
+          <div className={navStyle.navItem3}>About</div>
+        </AniLink>
+      </div>
+    </div>
+  );
+};

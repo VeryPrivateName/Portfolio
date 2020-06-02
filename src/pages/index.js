@@ -21,7 +21,7 @@ const IndexPage = () => {
           <AniLink
             className='linkStyle'
             cover
-            duration={1.5}
+            duration={0.9}
             to='/projects'
             direction='down'
             bg='#023B54'
@@ -31,7 +31,7 @@ const IndexPage = () => {
           <AniLink
             className='linkStyle'
             cover
-            duration={1.5}
+            duration={0.9}
             to='/about'
             direction='down'
             bg='#023B54'

@@ -1,10 +1,41 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
+
 import Layout from '../components/Layout';
 
 import ft from '../images/ft1.jpg';
 import Style from './projects.module.scss';
 
-const projects = () => {
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 600, quality: 100) {
+        ...GatsbyImageSharpFluid_tracedSVG
+        ...GatsbyImageSharpFluidLimitPresentationSize
+      }
+    }
+  }
+`;
+
+export const pageQuery = graphql`
+  query {
+    project1: file(relativePath: { eq: "ft1.jpg" }) {
+      ...fluidImage
+    }
+    project2: file(relativePath: { eq: "ft1.jpg" }) {
+      ...fluidImage
+    }
+    project3: file(relativePath: { eq: "ft1.jpg" }) {
+      ...fluidImage
+    }
+    project4: file(relativePath: { eq: "ft1.jpg" }) {
+      ...fluidImage
+    }
+  }
+`;
+
+const projects = props => {
   return (
     <Layout>
       <div className={Style.grid}>
@@ -13,7 +44,7 @@ const projects = () => {
         <div className={Style.gradient}>
           <div className={Style.project}>
             <div className={Style.projectImage}>
-              <img src={ft} alt='dasdasd'></img>
+              <Img fluid={props.data.project1.childImageSharp.fluid} />
             </div>
             <div className={Style.projectInfo}>
               <h3 className={Style.mb}>Project1</h3>
@@ -41,7 +72,7 @@ const projects = () => {
         <div className={Style.gradient}>
           <div className={Style.project}>
             <div className={Style.projectImage}>
-              <img src={ft} alt='dasdasd'></img>
+              <Img fluid={props.data.project2.childImageSharp.fluid} />
             </div>
             <div className={Style.projectInfo}>
               <h3 className={Style.mb}>Project1</h3>
@@ -69,7 +100,7 @@ const projects = () => {
         <div className={Style.gradient}>
           <div className={Style.project}>
             <div className={Style.projectImage}>
-              <img src={ft} alt='dasdasd'></img>
+              <Img fluid={props.data.project3.childImageSharp.fluid} />
             </div>
             <div className={Style.projectInfo}>
               <h3 className={Style.mb}>Project1</h3>
@@ -97,7 +128,7 @@ const projects = () => {
         <div className={Style.gradient}>
           <div className={Style.project}>
             <div className={Style.projectImage}>
-              <img src={ft} alt='dasdasd'></img>
+              <Img fluid={props.data.project4.childImageSharp.fluid} />
             </div>
             <div className={Style.projectInfo}>
               <h3 className={Style.mb}>Project1</h3>

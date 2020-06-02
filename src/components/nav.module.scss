@@ -55,6 +55,11 @@
   border-image-slice: 1 100%;
   padding: 0 3rem;
 }
+@media screen and (max-width: 2560px) {
+  .container {
+    width: 65%;
+  }
+}
 @media screen and (max-width: 1380px) {
   .navItem2 {
     height: 135px;

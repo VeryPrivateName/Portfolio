@@ -26,7 +26,7 @@ const Nav = () => {
         <AniLink
           className={navStyle.linkStyle}
           cover
-          duration={1.5}
+          duration={0.9}
           to='/'
           direction='up'
           bg='#023B54'

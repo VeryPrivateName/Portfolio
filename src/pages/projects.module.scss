@@ -32,6 +32,9 @@
 .mb {
   margin-bottom: 0.75rem;
 }
+.mbT {
+  margin-bottom: 0.75rem;
+}
 
 .mtitle {
   padding: 6rem 0rem;
@@ -73,5 +76,25 @@
   
 }
 @media screen and (max-width: 800px) {
+  .gradient {
+    margin: 3rem 1.1rem;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .mb {
+    margin-bottom: 2.5rem;
+  }
+  .mbT {
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+  .projectImage {
+    margin-bottom: 1.5rem;
+  }
 
 }

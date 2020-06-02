@@ -47,7 +47,7 @@ const projects = props => {
               <Img fluid={props.data.project1.childImageSharp.fluid} />
             </div>
             <div className={Style.projectInfo}>
-              <h3 className={Style.mb}>Project1</h3>
+              <h3 className={Style.mbT}>Project1</h3>
               <p className={Style.mb}>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Dolorem ab ut dolore eius eveniet. Tenetur animi molestias
@@ -75,7 +75,7 @@ const projects = props => {
               <Img fluid={props.data.project2.childImageSharp.fluid} />
             </div>
             <div className={Style.projectInfo}>
-              <h3 className={Style.mb}>Project1</h3>
+              <h3 className={Style.mbT}>Project1</h3>
               <p className={Style.mb}>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Dolorem ab ut dolore eius eveniet. Tenetur animi molestias
@@ -103,7 +103,7 @@ const projects = props => {
               <Img fluid={props.data.project3.childImageSharp.fluid} />
             </div>
             <div className={Style.projectInfo}>
-              <h3 className={Style.mb}>Project1</h3>
+              <h3 className={Style.mbT}>Project1</h3>
               <p className={Style.mb}>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Dolorem ab ut dolore eius eveniet. Tenetur animi molestias
@@ -131,7 +131,7 @@ const projects = props => {
               <Img fluid={props.data.project4.childImageSharp.fluid} />
             </div>
             <div className={Style.projectInfo}>
-              <h3 className={Style.mb}>Project1</h3>
+              <h3 className={Style.mbT}>Project1</h3>
               <p className={Style.mb}>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Dolorem ab ut dolore eius eveniet. Tenetur animi molestias

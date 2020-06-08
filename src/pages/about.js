@@ -3,8 +3,7 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import Layout from '../components/Layout';
-import Style from './about.module.scss';
-
+import ScrollArrow from '../components/ScrollArrow';
 // import peep from '../images/peep.svg';
 
 // import peep4 from '../images/IGNO AVATAR-04.png';
@@ -18,7 +17,9 @@ import {
   FaChess,
   FaLinkedin,
   FaGithub,
+  FaEnvelope,
 } from 'react-icons/fa';
+import Style from './about.module.scss';
 
 export const pageQuery = graphql`
   query {
@@ -153,10 +154,19 @@ const about = props => {
               >
                 <FaGithub />
               </a>
+              {/* Pakeist emailo adresa */}
+              <a
+                href='https://github.com/VeryPrivateName'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FaEnvelope />
+              </a>
               <p className={Style.colorspanMail}>ignas@ignas.link</p>
             </div>
           </IconContext.Provider>
         </div>
+        <ScrollArrow />
       </div>
     </Layout>
   );

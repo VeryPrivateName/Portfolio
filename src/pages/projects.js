@@ -3,14 +3,14 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import Layout from '../components/Layout';
+import ScrollArrow from '../components/ScrollArrow';
 
-import ft from '../images/ft1.jpg';
 import Style from './projects.module.scss';
 
 export const fluidImage = graphql`
   fragment fluidImage on File {
     childImageSharp {
-      fluid(maxWidth: 600, quality: 100) {
+      fluid(maxWidth: 700, quality: 100) {
         ...GatsbyImageSharpFluid_tracedSVG
         ...GatsbyImageSharpFluidLimitPresentationSize
       }
@@ -39,7 +39,6 @@ const projects = props => {
   return (
     <Layout>
       <div className={Style.grid}>
-        {/* Gal isimt title kadangi navigacijoje jau matosi kur randiesi */}
         <h1 className={Style.mtitle}>My Work</h1>
         <div className={Style.gradient}>
           <div className={Style.project}>
@@ -153,6 +152,7 @@ const projects = props => {
             </div>
           </div>
         </div>
+        <ScrollArrow />
       </div>
     </Layout>
   );

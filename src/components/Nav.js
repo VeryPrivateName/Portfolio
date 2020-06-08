@@ -25,11 +25,12 @@ const Nav = () => {
       <div className={navStyle.navItem2}>
         <AniLink
           className={navStyle.linkStyle}
-          cover
-          duration={0.9}
+          // cover
+          fade
+          duration={0.5}
           to='/'
-          direction='up'
-          bg='#023B54'
+          // direction='up'
+          // bg='#023B54'
         >
           <FaceLogo />
         </AniLink>

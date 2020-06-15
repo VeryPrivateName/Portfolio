@@ -23,7 +23,7 @@ import Style from './about.module.scss';
 
 export const pageQuery = graphql`
   query {
-    imageOne: file(relativePath: { eq: "IGNOAVATAR-04.png" }) {
+    imageOne: file(relativePath: { eq: "igno-avatar-master.png" }) {
       childImageSharp {
         fluid(maxWidth: 300, quality: 100) {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -38,7 +38,7 @@ const about = props => {
   return (
     <Layout>
       <div className={Style.grid}>
-        <h1 className={Style.mtitle}>Frontend Developer</h1>
+        <h1 className={Style.mtitle}>Web Developer</h1>
         <div className={Style.gridIntro}>
           <div className={Style.graphic}>
             <Img fluid={props.data.imageOne.childImageSharp.fluid} />

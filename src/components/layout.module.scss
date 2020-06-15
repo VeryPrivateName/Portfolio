@@ -3,5 +3,14 @@
     justify-items: center;
     position: relative;
     background-color: var(--light1-color);
+    border: 8px solid var(--primary-color);
+    min-height: calc(100vh - 8px);
 }
+
+@media screen and (max-width: 800px) {
+    .grid {
+      border: 2px solid var(--primary-color);
+      min-height: calc(100vh - 4px);
+    }
+  }
 

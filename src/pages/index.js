@@ -8,7 +8,7 @@ import Link from 'gatsby-plugin-transition-link';
 import '../App.scss';
 
 import FaceLogo from '../components/scene/FaceLogo';
-// import Loader from '../components/Loader';
+import Loader from '../components/Loader';
 
 const IndexPage = () => {
   return (
@@ -16,7 +16,7 @@ const IndexPage = () => {
       <div className='holder'>
         <h1 className='xlarge pBottom colorpaint'>Ignas</h1>
         <h2 className='large pBottom defaultFont'>
-          I create your Internet face
+          I will create you a Internet face
         </h2>
         <div className='buttons'>
           <AniLink className='linkStyle' fade duration={0.5} to='/projects'>
@@ -27,6 +27,7 @@ const IndexPage = () => {
           </AniLink>
         </div>
       </div>
+
       <div className='holder2'>
         <FaceLogo />
       </div>

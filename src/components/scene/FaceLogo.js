@@ -2,6 +2,7 @@ import React, { Fragment, Suspense, useRef, useState, useRender } from 'react';
 import { Canvas, useThree, useFrame } from 'react-three-fiber';
 
 import FaceV1 from './Facev1';
+import Loader from '../Loader';
 
 const FaceLogo = () => {
   const isBrowser = typeof window !== 'undefined';

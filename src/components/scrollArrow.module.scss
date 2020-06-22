@@ -1,7 +1,28 @@
-  .scrollTop {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 2rem;
-    justify-self: center;
-    cursor: pointer;
+.scrollTop {
+  position: fixed; 
+  bottom: 80px;
+  right: 60px;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.7;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .scrollTop {
+    bottom: 20px;
+    right: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

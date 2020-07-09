@@ -1,38 +1,29 @@
-import React, { Fragment, Suspense, useRef, useState, useRender } from 'react';
-import { Canvas, useThree, useFrame } from 'react-three-fiber';
+import React, { Suspense } from 'react';
+import { Canvas, Dom } from 'react-three-fiber';
 
 import FaceV1 from './Facev1';
-import Loader from '../Loader';
 
 const FaceLogo = () => {
-  const isBrowser = typeof window !== 'undefined';
   const d = 8.25;
   return (
     <>
-      {isBrowser && (
-        <Canvas shadowMap pixelRatio={window.devicePixelRatio}>
-          <hemisphereLight
-            skyColor={'black'}
-            groundColor={0xffffff}
-            intensity={0.68}
-            position={[0, 50, 0]}
-          />
-          <directionalLight
-            position={[-8, 12, 8]}
-            shadow-camera-left={d * -1}
-            shadow-camera-bottom={d * -1}
-            shadow-camera-right={d}
-            shadow-camera-top={d}
-            shadow-camera-near={0.1}
-            shadow-camera-far={1500}
-            castShadow
-          />
-          <Suspense fallback={null}>
-            {/* <Scene /> */}
-            <FaceV1 />
-          </Suspense>
-        </Canvas>
-      )}
+      <Canvas pixelRatio={window.devicePixelRatio}>
+        <ambientLight intensity={1.1} />
+        <pointLight intensity={1} position={[-10, -25, -10]} />
+        <spotLight
+          intensity={1.05}
+          angle={Math.PI / 8}
+          position={[25, 25, 15]}
+          shadow-mapSize-width={2048}
+          shadow-mapSize-height={2048}
+        />
+        <Suspense
+          fallback={<Dom center className='loading' children='Loading...' />}
+        >
+          {/* <Scene /> */}
+          <FaceV1 />
+        </Suspense>
+      </Canvas>
     </>
   );
 };

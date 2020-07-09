@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useTransition, animated, config } from 'react-spring';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
@@ -23,13 +24,13 @@ export const pageQuery = graphql`
     project1: file(relativePath: { eq: "ft1.jpg" }) {
       ...fluidImage
     }
-    project2: file(relativePath: { eq: "ft1.jpg" }) {
+    project2: file(relativePath: { eq: "ft2.jpg" }) {
       ...fluidImage
     }
-    project3: file(relativePath: { eq: "ft1.jpg" }) {
+    project3: file(relativePath: { eq: "ft3.jpg" }) {
       ...fluidImage
     }
-    project4: file(relativePath: { eq: "ft1.jpg" }) {
+    project4: file(relativePath: { eq: "ft4.jpg" }) {
       ...fluidImage
     }
   }

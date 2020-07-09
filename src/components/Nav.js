@@ -5,8 +5,8 @@ import Link from 'gatsby-plugin-transition-link';
 
 import navStyle from './nav.module.scss';
 import '../App.scss';
-// import Logo from '../images/logo.png';
-import FaceLogo from '../components/scene/FaceLogo';
+import Logo from '../images/logo.png';
+// import FaceLogo from '../components/scene/FaceLogo';
 
 const Nav = () => {
   return (
@@ -32,7 +32,8 @@ const Nav = () => {
           // direction='up'
           // bg='#023B54'
         >
-          <FaceLogo />
+          <img src={Logo} alt='logo' className={navStyle.imgNav}></img>
+          {/* <FaceLogo /> */}
         </AniLink>
       </div>
       <div className={navStyle.navItem3}>

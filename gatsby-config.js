@@ -10,10 +10,6 @@ module.exports = {
         name: 'images',
       },
     },
-    'gatsby-plugin-sass',
-    `gatsby-plugin-transition-link`,
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
@@ -25,6 +21,17 @@ module.exports = {
             family: `Righteous`,
           },
         ],
+      },
+    },
+    'gatsby-plugin-sass',
+    `gatsby-plugin-transition-link`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#023B54`,
       },
     },
     {

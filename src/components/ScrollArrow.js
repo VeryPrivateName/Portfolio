@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaArrowCircleUp } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import Style from './scrollArrow.module.scss';
@@ -19,7 +19,12 @@ const ScrollArrow = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  window.addEventListener('scroll', checkScrollTop);
+  useEffect(() => {
+    window.addEventListener('scroll', checkScrollTop);
+    return () => {
+      window.removeEventListener('scroll', checkScrollTop);
+    };
+  });
 
   return (
     <IconContext.Provider

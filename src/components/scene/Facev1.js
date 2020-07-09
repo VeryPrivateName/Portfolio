@@ -2,12 +2,14 @@ import * as THREE from 'three';
 import React, { useEffect, useRef, useState } from 'react';
 import { useLoader, useFrame } from 'react-three-fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { draco } from 'drei';
 
 export default function Model(props) {
   const group = useRef();
-  const { nodes, materials, animations } = useLoader(
+  const { nodes, materials } = useLoader(
     GLTFLoader,
-    '/faceV1.gltf'
+    '/faceV2glb.glb',
+    draco('/draco-gltf/')
   );
 
   const [hovered, setHover] = useState(false);
@@ -16,13 +18,12 @@ export default function Model(props) {
   useFrame(() => {
     if (!hovered) {
       group.current.rotation.y += 0.01;
-      group.current.rotation.x += 0.02;
-      group.current.rotation.z += 0.01;
+      group.current.rotation.x += 0.0001;
     }
     if (hovered && active) {
-      group.current.rotation.y += 0.04;
-      group.current.rotation.x += 0.08;
-      group.current.rotation.z += 0.01;
+      group.current.rotation.y += -0.04;
+      group.current.rotation.x += -0.01;
+      group.current.rotation.z += -0.01;
     } else {
       group.current.rotation.y += 0.0;
       group.current.rotation.x += 0.0;
@@ -35,9 +36,9 @@ export default function Model(props) {
       ref={group}
       {...props}
       dispose={null}
-      onClick={e => setActive(!active)}
-      onPointerOver={e => setHover(true)}
-      onPointerOut={e => setHover(false)}
+      onClick={() => setActive(!active)}
+      onPointerOver={() => setHover(true)}
+      onPointerOut={() => setHover(false)}
     >
       <scene name='Scene'>
         <group

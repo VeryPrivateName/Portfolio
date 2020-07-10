@@ -7,6 +7,7 @@ import Layout from '../components/Layout';
 import ScrollArrow from '../components/ScrollArrow';
 
 import Style from './projects.module.scss';
+import SlideShow from '../components/ImageSlider';
 
 export const fluidImage = graphql`
   fragment fluidImage on File {
@@ -44,7 +45,8 @@ const projects = props => {
         <div className={Style.gradient}>
           <div className={Style.project}>
             <div className={Style.projectImage}>
-              <Img fluid={props.data.project1.childImageSharp.fluid} />
+              <SlideShow />
+              {/* <Img fluid={props.data.project1.childImageSharp.fluid} /> */}
             </div>
             <div className={Style.projectInfo}>
               <h3 className={Style.mbT}>Project1</h3>

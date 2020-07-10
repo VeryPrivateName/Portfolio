@@ -4,7 +4,6 @@ import { Canvas, Dom } from 'react-three-fiber';
 import FaceV1 from './Facev1';
 
 const FaceLogo = () => {
-  const d = 8.25;
   return (
     <>
       <Canvas pixelRatio={window.devicePixelRatio}>

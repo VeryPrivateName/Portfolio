@@ -1,7 +1,7 @@
 import React from 'react';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
-import Link from 'gatsby-plugin-transition-link';
+// import Link from 'gatsby-plugin-transition-link';
 
 // import { Link } from 'gatsby';
 import '../App.scss';
@@ -18,7 +18,7 @@ const IndexPage = () => {
         </h2>
         <div className='buttons'>
           <AniLink className='linkStyle' fade duration={0.5} to='/projects'>
-            <div className='button '>Projects</div>
+            <div className='button'>Projects</div>
           </AniLink>
           <AniLink className='linkStyle' fade duration={0.5} to='/about'>
             <div className='button'>About</div>

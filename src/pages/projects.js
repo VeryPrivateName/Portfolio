@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 import ScrollArrow from '../components/ScrollArrow';
 
 import Style from './projects.module.scss';
-import SlideShow from '../components/ImageSlider';
+import SlideShow from '../components/SlideShow';
 
 export const fluidImage = graphql`
   fragment fluidImage on File {

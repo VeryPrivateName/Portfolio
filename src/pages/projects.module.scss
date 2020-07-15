@@ -5,7 +5,7 @@
   padding-bottom: 3rem;
 }
 .gradient {
-  max-width: 75rem;
+  max-width: 85rem;
   margin: 3rem 0rem;
   box-shadow: 0 3px 4px rgba(37, 37, 37, 0.2), 0 1px 6px rgba(65, 63, 63, 0.25);
   background: linear-gradient(rgba(143, 148, 251, 0.7), #ef93ec);
@@ -17,10 +17,18 @@
   column-gap: 3rem;
   align-items: center;
   padding: 3rem;
-  color: white;
+  color: var(--light-color);
   width: 100%;
   //   justify-self: center;
 }
+.projectCurrent {
+  display: grid;
+  align-items: center;
+  padding: 3rem;
+  color: var(--light-color);
+  width: 100%;
+}
+
 .projectImage {
   width: 100%;
   align-self: start;
@@ -35,6 +43,7 @@
 }
 .mbT {
   margin-bottom: 0.75rem;
+  color: var(--primaryL-color);
 }
 
 .mtitle {

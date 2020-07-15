@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-function SlideShow() {
+const SpaceSlides = () => {
   const [index, setIndex] = useState(0);
   const { allFile } = useStaticQuery(
     graphql`
       query {
         allFile(
           sort: { fields: name, order: DESC }
-          filter: { relativeDirectory: { eq: "slides" } }
+          filter: { relativeDirectory: { eq: "projectSpace" } }
         ) {
           edges {
             node {
@@ -40,14 +40,11 @@ function SlideShow() {
       <div
         onMouseEnter={() => handlePrevious()}
         onMouseLeave={() => handleNext()}
+        onTouchStart={() => handleNext()}
       >
         <Img fluid={node.childImageSharp.fluid} key={node.id} alt={node.name} />
       </div>
-      {/* <div>
-        <button onClick={() => handlePrevious()}>Previous</button>
-        <button onClick={() => handleNext()}>Next</button>
-      </div> */}
     </>
   );
-}
-export default SlideShow;
+};
+export default SpaceSlides;

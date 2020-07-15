@@ -1,41 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { useTransition, animated, config } from 'react-spring';
-import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import React from 'react';
 
 import Layout from '../components/Layout';
 import ScrollArrow from '../components/ScrollArrow';
 
 import Style from './projects.module.scss';
-import SlideShow from '../components/SlideShow';
-
-export const fluidImage = graphql`
-  fragment fluidImage on File {
-    childImageSharp {
-      fluid(maxWidth: 700, quality: 100) {
-        ...GatsbyImageSharpFluid_tracedSVG
-        ...GatsbyImageSharpFluidLimitPresentationSize
-      }
-    }
-  }
-`;
-
-export const pageQuery = graphql`
-  query {
-    project1: file(relativePath: { eq: "ft1.jpg" }) {
-      ...fluidImage
-    }
-    project2: file(relativePath: { eq: "ft2.jpg" }) {
-      ...fluidImage
-    }
-    project3: file(relativePath: { eq: "ft3.jpg" }) {
-      ...fluidImage
-    }
-    project4: file(relativePath: { eq: "ft4.jpg" }) {
-      ...fluidImage
-    }
-  }
-`;
+import RCPslides from '../components/projectImageControl/RCPslides';
+import GithubSlides from '../components/projectImageControl/GithubSlides';
+import SpaceSlides from '../components/projectImageControl/SpaceSlides';
+import ContactSlides from '../components/projectImageControl/ContactSlides';
+import TaskSlides from '../components/projectImageControl/TaskSlides';
+import SpiralSlides from '../components/projectImageControl/SpiralSlides';
 
 const projects = props => {
   return (
@@ -45,8 +19,36 @@ const projects = props => {
         <div className={Style.gradient}>
           <div className={Style.project}>
             <div className={Style.projectImage}>
-              <SlideShow />
-              {/* <Img fluid={props.data.project1.childImageSharp.fluid} /> */}
+              <RCPslides />
+            </div>
+            <div className={Style.projectInfo}>
+              {/* idet linkus i koda ir site */}
+              <h3 className={Style.mbT}>Project1</h3>
+              <p className={Style.mb}>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorem ab ut dolore eius eveniet. Tenetur animi molestias
+                officia recusandae ipsum, consequuntur soluta repellat
+                exercitationem, dolor est a quae laudantium voluptatibus beatae
+                blanditiis obcaecati doloremque at consectetur et cupiditate.
+                Blanditiis qui id doloribus facere facilis placeat deserunt
+                atque explicabo ipsum itaque.
+              </p>
+              <ul className={Style.ulSt}>
+                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>HTML</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className={Style.gradient}>
+          <div className={Style.project}>
+            <div className={Style.projectImage}>
+              <GithubSlides />
             </div>
             <div className={Style.projectInfo}>
               <h3 className={Style.mbT}>Project1</h3>
@@ -74,7 +76,7 @@ const projects = props => {
         <div className={Style.gradient}>
           <div className={Style.project}>
             <div className={Style.projectImage}>
-              <Img fluid={props.data.project2.childImageSharp.fluid} />
+              <SpaceSlides />
             </div>
             <div className={Style.projectInfo}>
               <h3 className={Style.mbT}>Project1</h3>
@@ -102,7 +104,7 @@ const projects = props => {
         <div className={Style.gradient}>
           <div className={Style.project}>
             <div className={Style.projectImage}>
-              <Img fluid={props.data.project3.childImageSharp.fluid} />
+              <ContactSlides />
             </div>
             <div className={Style.projectInfo}>
               <h3 className={Style.mbT}>Project1</h3>
@@ -130,7 +132,35 @@ const projects = props => {
         <div className={Style.gradient}>
           <div className={Style.project}>
             <div className={Style.projectImage}>
-              <Img fluid={props.data.project4.childImageSharp.fluid} />
+              <TaskSlides />
+            </div>
+            <div className={Style.projectInfo}>
+              <h3 className={Style.mbT}>Project1</h3>
+              <p className={Style.mb}>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorem ab ut dolore eius eveniet. Tenetur animi molestias
+                officia recusandae ipsum, consequuntur soluta repellat
+                exercitationem, dolor est a quae laudantium voluptatibus beatae
+                blanditiis obcaecati doloremque at consectetur et cupiditate.
+                Blanditiis qui id doloribus facere facilis placeat deserunt
+                atque explicabo ipsum itaque.
+              </p>
+              <ul className={Style.ulSt}>
+                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>HTML</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className={Style.gradient}>
+          <div className={Style.project}>
+            <div className={Style.projectImage}>
+              <SpiralSlides />
             </div>
             <div className={Style.projectInfo}>
               <h3 className={Style.mbT}>Project1</h3>

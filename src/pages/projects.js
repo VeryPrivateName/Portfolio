@@ -45,7 +45,7 @@ const projects = props => {
             </div>
           </div>
         </div>
-        <div className={Style.gradient}>
+        <div className={Style.gradient2}>
           <div className={Style.project}>
             <div className={Style.projectImage}>
               <GithubSlides />
@@ -73,7 +73,7 @@ const projects = props => {
             </div>
           </div>
         </div>
-        <div className={Style.gradient}>
+        <div className={Style.gradient3}>
           <div className={Style.project}>
             <div className={Style.projectImage}>
               <SpaceSlides />
@@ -101,7 +101,7 @@ const projects = props => {
             </div>
           </div>
         </div>
-        <div className={Style.gradient}>
+        <div className={Style.gradient4}>
           <div className={Style.project}>
             <div className={Style.projectImage}>
               <ContactSlides />
@@ -129,7 +129,7 @@ const projects = props => {
             </div>
           </div>
         </div>
-        <div className={Style.gradient}>
+        <div className={Style.gradient5}>
           <div className={Style.project}>
             <div className={Style.projectImage}>
               <TaskSlides />
@@ -157,7 +157,7 @@ const projects = props => {
             </div>
           </div>
         </div>
-        <div className={Style.gradient}>
+        <div className={Style.gradient6}>
           <div className={Style.project}>
             <div className={Style.projectImage}>
               <SpiralSlides />
@@ -173,6 +173,22 @@ const projects = props => {
                 Blanditiis qui id doloribus facere facilis placeat deserunt
                 atque explicabo ipsum itaque.
               </p>
+              <ul className={Style.ulSt}>
+                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>HTML</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className={Style.gradient7}>
+          <div className={Style.projectCurrent}>
+            <div className={Style.projectInfo}>
+              <h3 className={Style.mbT}>This website is built with:</h3>
               <ul className={Style.ulSt}>
                 <li className={Style.box}>HTML</li>
                 <li className={Style.box}>HTML</li>

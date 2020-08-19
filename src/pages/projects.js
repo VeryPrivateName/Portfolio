@@ -11,7 +11,7 @@ import ContactSlides from '../components/projectImageControl/ContactSlides';
 import TaskSlides from '../components/projectImageControl/TaskSlides';
 import SpiralSlides from '../components/projectImageControl/SpiralSlides';
 
-const projects = props => {
+const projects = () => {
   return (
     <Layout>
       <div className={Style.grid}>
@@ -23,24 +23,18 @@ const projects = props => {
             </div>
             <div className={Style.projectInfo}>
               {/* idet linkus i koda ir site */}
-              <h3 className={Style.mbT}>Project1</h3>
+              <h3 className={Style.mbT}>rcpdcp.com</h3>
               <p className={Style.mb}>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Dolorem ab ut dolore eius eveniet. Tenetur animi molestias
-                officia recusandae ipsum, consequuntur soluta repellat
-                exercitationem, dolor est a quae laudantium voluptatibus beatae
-                blanditiis obcaecati doloremque at consectetur et cupiditate.
-                Blanditiis qui id doloribus facere facilis placeat deserunt
-                atque explicabo ipsum itaque.
+                A functional and minimalistic portfolio website for an
+                artist/content creative. "rcpdcp", which can be deciphered as
+                recomposer/decomposer, is a dual web universe of a visual
+                artist/(copy)writer-music journalist.
               </p>
               <ul className={Style.ulSt}>
                 <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>SCSS</li>
+                <li className={Style.box}>JavaScript</li>
+                <li className={Style.box}>Netlify</li>
               </ul>
             </div>
           </div>
@@ -51,24 +45,17 @@ const projects = props => {
               <GithubSlides />
             </div>
             <div className={Style.projectInfo}>
-              <h3 className={Style.mbT}>Project1</h3>
+              <h3 className={Style.mbT}>GitHub Users</h3>
               <p className={Style.mb}>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Dolorem ab ut dolore eius eveniet. Tenetur animi molestias
-                officia recusandae ipsum, consequuntur soluta repellat
-                exercitationem, dolor est a quae laudantium voluptatibus beatae
-                blanditiis obcaecati doloremque at consectetur et cupiditate.
-                Blanditiis qui id doloribus facere facilis placeat deserunt
-                atque explicabo ipsum itaque.
+                Web app for finding Github users. The purpose of the project was
+                to practice working with React and Context API.
               </p>
               <ul className={Style.ulSt}>
                 <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>CSS</li>
+                <li className={Style.box}>React</li>
+                <li className={Style.box}>Github API</li>
+                <li className={Style.box}>Netlify</li>
               </ul>
             </div>
           </div>
@@ -79,24 +66,19 @@ const projects = props => {
               <SpaceSlides />
             </div>
             <div className={Style.projectInfo}>
-              <h3 className={Style.mbT}>Project1</h3>
+              <h3 className={Style.mbT}>Interactive Landing Page</h3>
               <p className={Style.mb}>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Dolorem ab ut dolore eius eveniet. Tenetur animi molestias
-                officia recusandae ipsum, consequuntur soluta repellat
-                exercitationem, dolor est a quae laudantium voluptatibus beatae
-                blanditiis obcaecati doloremque at consectetur et cupiditate.
-                Blanditiis qui id doloribus facere facilis placeat deserunt
-                atque explicabo ipsum itaque.
+                A landing page template done with Three.js. Main purpose of the
+                project was to learn how 3D computer graphics work in a web
+                browser.
               </p>
               <ul className={Style.ulSt}>
                 <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>CSS</li>
+                <li className={Style.box}>JavaScript</li>
+                <li className={Style.box}>Three.js</li>
+                <li className={Style.box}>GSAP</li>
+                <li className={Style.box}>Netlify</li>
               </ul>
             </div>
           </div>
@@ -107,24 +89,20 @@ const projects = props => {
               <ContactSlides />
             </div>
             <div className={Style.projectInfo}>
-              <h3 className={Style.mbT}>Project1</h3>
+              <h3 className={Style.mbT}>Contact Keeper</h3>
               <p className={Style.mb}>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Dolorem ab ut dolore eius eveniet. Tenetur animi molestias
-                officia recusandae ipsum, consequuntur soluta repellat
-                exercitationem, dolor est a quae laudantium voluptatibus beatae
-                blanditiis obcaecati doloremque at consectetur et cupiditate.
-                Blanditiis qui id doloribus facere facilis placeat deserunt
-                atque explicabo ipsum itaque.
+                Web App done with MERN stack for keeping your contacts. The goal
+                of the project was to practise with one of the more popular
+                stacks out there.
               </p>
               <ul className={Style.ulSt}>
                 <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>CSS</li>
+                <li className={Style.box}>React</li>
+                <li className={Style.box}>MongoDB</li>
+                <li className={Style.box}>Node.js</li>
+                <li className={Style.box}>Express.js</li>
+                <li className={Style.box}>Heroku</li>
               </ul>
             </div>
           </div>
@@ -135,24 +113,18 @@ const projects = props => {
               <TaskSlides />
             </div>
             <div className={Style.projectInfo}>
-              <h3 className={Style.mbT}>Project1</h3>
+              <h3 className={Style.mbT}>Task logger</h3>
               <p className={Style.mb}>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Dolorem ab ut dolore eius eveniet. Tenetur animi molestias
-                officia recusandae ipsum, consequuntur soluta repellat
-                exercitationem, dolor est a quae laudantium voluptatibus beatae
-                blanditiis obcaecati doloremque at consectetur et cupiditate.
-                Blanditiis qui id doloribus facere facilis placeat deserunt
-                atque explicabo ipsum itaque.
+                Imitation of internal IT department app for logging tasks. Main
+                objective of the project was to learn the differences between
+                Context API and Redux for React state management.
               </p>
               <ul className={Style.ulSt}>
                 <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>CSS</li>
+                <li className={Style.box}>Materialize</li>
+                <li className={Style.box}>React</li>
+                <li className={Style.box}>JSON-Server</li>
               </ul>
             </div>
           </div>
@@ -163,24 +135,18 @@ const projects = props => {
               <SpiralSlides />
             </div>
             <div className={Style.projectInfo}>
-              <h3 className={Style.mbT}>Project1</h3>
+              <h3 className={Style.mbT}>Cyberspacewhat.com</h3>
               <p className={Style.mb}>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Dolorem ab ut dolore eius eveniet. Tenetur animi molestias
-                officia recusandae ipsum, consequuntur soluta repellat
-                exercitationem, dolor est a quae laudantium voluptatibus beatae
-                blanditiis obcaecati doloremque at consectetur et cupiditate.
-                Blanditiis qui id doloribus facere facilis placeat deserunt
-                atque explicabo ipsum itaque.
+                One of my the very first webpages done for affiliate business.
+                The general theme of the website being personal privacy.
+                Currently discontinued.
               </p>
               <ul className={Style.ulSt}>
                 <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>SCSS</li>
+                <li className={Style.box}>JavaScript</li>
+                <li className={Style.box}>Bootstrap</li>
+                <li className={Style.box}>Netlify</li>
               </ul>
             </div>
           </div>
@@ -188,15 +154,14 @@ const projects = props => {
         <div className={Style.gradient7}>
           <div className={Style.projectCurrent}>
             <div className={Style.projectInfo}>
-              <h3 className={Style.mbT}>This website is built with:</h3>
+              <h3 className={Style.mbT}>This portfolio is built with:</h3>
               <ul className={Style.ulSt}>
                 <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>SCSS</li>
+                <li className={Style.box}>Gatsby.js</li>
+                <li className={Style.box}>React Three Fiber</li>
+                <li className={Style.box}>GraphQL</li>
+                <li className={Style.box}>Netlify</li>
               </ul>
             </div>
           </div>

@@ -53,13 +53,13 @@ const about = props => {
                 <div className={Style.gridy}>
                   <FaChild className={Style.gridyCenter} />
                   <p>
-                    <span className={Style.colorspan}>Who:</span> Ignas, a
-                    Lithuanian Frontend developer based in Berlin.
+                    <span className={Style.colorspan}>Who:</span> Ignas,
+                    multi-purpose geek based in Berlin.
                   </p>
                   <FaFire className={Style.gridyCenter} />
                   <p>
                     <span className={Style.colorspan}>Passions:</span> all
-                    things technology, music, gym, history, traveling and - very
+                    things technology, music, history, gym, traveling and - very
                     much so - video games.
                   </p>
                   <FaCrosshairs className={Style.gridyCenter} />
@@ -84,53 +84,53 @@ const about = props => {
           </div>
         </div>
         <h2 className={Style.mtitle}>Skills</h2>
-        <div className={Style.wrapper}>
-          <h3 className={Style.m1}>Languages</h3>
-          <ul className={Style.ulSt}>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-          </ul>
-        </div>
-        <div className={Style.wrapper}>
-          <h3 className={Style.m1}>Tools</h3>
-          <ul className={Style.ulSt}>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-          </ul>
-        </div>
-        <div className={Style.wrapper}>
-          <h3 className={Style.m1}>Other</h3>
-          <ul className={Style.ulSt}>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-          </ul>
-        </div>
-        <div className={Style.wrapper}>
-          <h3 className={Style.m1}>Databases</h3>
-          <ul className={Style.ulSt}>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-            <li className={Style.box}>HTML</li>
-          </ul>
+        <div className={Style.skills}>
+          <div className={Style.wrapper}>
+            <h3 className={Style.m1}>Front End</h3>
+            <ul className={Style.ulSt}>
+              <li className={Style.box}>HTML</li>
+              <li className={Style.box}>CSS</li>
+              <li className={Style.box}>JavaScript</li>
+              <li className={Style.box}>React</li>
+              <li className={Style.box}>Gatsby JS</li>
+              <li className={Style.box}>Three.js</li>
+              <li className={Style.box}>GSAP</li>
+              <li className={Style.box}>Bootstrap</li>
+            </ul>
+          </div>
+          <div className={Style.wrapper}>
+            <h3 className={Style.m1}>Back End</h3>
+            <ul className={Style.ulSt}>
+              <li className={Style.box}>MongoDB</li>
+              <li className={Style.box}>GraphQL</li>
+              <li className={Style.box}>Node.js</li>
+              <li className={Style.box}>Express.js</li>
+            </ul>
+          </div>
+          <div className={Style.wrapper}>
+            <h3 className={Style.m1}>Other</h3>
+            <ul className={Style.ulSt}>
+              <li className={Style.box}>Google Analytics</li>
+              <li className={Style.box}>Backlinks</li>
+              <li className={Style.box}>Puppeteer</li>
+              <li className={Style.box}>GitHub / Git</li>
+              <li className={Style.box}>Adobe Photoshop / XD</li>
+              <li className={Style.box}>Blender</li>
+              <li className={Style.box}>DaVinci Resolve</li>
+              <li className={Style.box}>Microsoft Office</li>
+            </ul>
+          </div>
+          <div className={Style.wrapper}>
+            <h3 className={Style.m1}>Soft Skills</h3>
+            <ul className={Style.ulSt}>
+              <li className={Style.box}>Project Management</li>
+              <li className={Style.box}>Business Ethics</li>
+              <li className={Style.box}>Customer Service</li>
+              <li className={Style.box}>Marketing</li>
+              <li className={Style.box}>Business Strategy</li>
+              <li className={Style.box}>Sales</li>
+            </ul>
+          </div>
         </div>
         <h2 className={Style.mtitle}>Contact</h2>
         <div className={Style.wrapperBorder}>

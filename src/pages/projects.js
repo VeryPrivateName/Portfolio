@@ -10,6 +10,7 @@ import SpaceSlides from '../components/projectImageControl/SpaceSlides';
 import ContactSlides from '../components/projectImageControl/ContactSlides';
 import TaskSlides from '../components/projectImageControl/TaskSlides';
 import SpiralSlides from '../components/projectImageControl/SpiralSlides';
+import { FaEye, FaGithub } from 'react-icons/fa';
 
 const projects = () => {
   return (
@@ -24,6 +25,24 @@ const projects = () => {
             <div className={Style.projectInfo}>
               {/* idet linkus i koda ir site */}
               <h3 className={Style.mbT}>rcpdcp.com</h3>
+              <div className={Style.links}>
+                <a
+                  href='https://github.com/VeryPrivateName'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={Style.outLink}
+                >
+                  <FaGithub className={Style.icon} />
+                </a>
+                <a
+                  href='https://github.com/VeryPrivateName'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={Style.outLink}
+                >
+                  <FaEye className={Style.icon} />
+                </a>
+              </div>
               <p className={Style.mb}>
                 A functional and minimalistic portfolio website for an
                 artist/content creative. "rcpdcp", which can be deciphered as
@@ -154,8 +173,8 @@ const projects = () => {
         <div className={Style.gradient7}>
           <div className={Style.projectCurrent}>
             <div className={Style.projectInfo}>
-              <h3 className={Style.mbT}>This portfolio is built with:</h3>
-              <ul className={Style.ulSt}>
+              <h3 className={Style.mbTT}>This portfolio is built with:</h3>
+              <ul className={Style.ulSt2}>
                 <li className={Style.box}>HTML</li>
                 <li className={Style.box}>SCSS</li>
                 <li className={Style.box}>Gatsby.js</li>

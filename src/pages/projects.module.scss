@@ -137,10 +137,25 @@
 //   width: 100%;
 //   align-self: start;
 // }
+.icon {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  transition: color 0.4s ease-in;
+}
+.icon:hover {
+  color: var(--paint-color);
+  transition: color 0.4s ease-in;
+  cursor: pointer;
+}
+.outLink {
+  text-decoration: none;
+  color: #000002;
+}
 
 .mb {
   margin-bottom: 1rem;
-  font-weight: 900;
+  margin-top: 1rem;
+  font-weight: 500;
   // color: var(--dark-color);
 }
 .mbT {
@@ -177,9 +192,25 @@
   // margin-left: 0.85rem;
 }
 
+.ulSt2 {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.ulSt2 li::before {
+  content: '\25A3';
+  // color: var(--light-color);
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-right: 0.35rem;
+  // margin-left: 0.85rem;
+}
+
 .box {
   margin-right: 1rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 @media screen and (max-width: 2560px) {
 }
@@ -193,6 +224,38 @@
   }
   .gradient {
     margin: 3rem 1.1rem;
+    padding: 1rem;
+    filter: grayscale(0%);
+  }
+  .gradient2 {
+    margin: 3rem 1.1rem;
+    padding: 1rem;
+    filter: grayscale(0%);
+  }
+  .gradient3 {
+    margin: 3rem 1.1rem;
+    padding: 1rem;
+    filter: grayscale(0%);
+  }
+  .gradient4 {
+    margin: 3rem 1.1rem;
+    padding: 1rem;
+    filter: grayscale(0%);
+  }
+  .gradient5 {
+    margin: 3rem 1.1rem;
+    padding: 1rem;
+    filter: grayscale(0%);
+  }
+  .gradient6 {
+    margin: 3rem 1.1rem;
+    padding: 1rem;
+    filter: grayscale(0%);
+  }
+  .gradient7 {
+    margin: 3rem 1.1rem;
+    padding: 1rem;
+    filter: grayscale(0%);
   }
   .project {
     display: grid;
@@ -200,13 +263,18 @@
     grid-template-rows: 1fr auto;
     column-gap: 0rem;
     row-gap: 2rem;
-    padding: 3rem;
+    padding: 2rem 1rem;
   }
   .mb {
     margin-bottom: 2.5rem;
   }
   .mbT {
     margin-bottom: 2.5rem;
+    text-align: center;
+  }
+  .mbTT {
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
     text-align: center;
   }
   .projectImage {
@@ -218,5 +286,13 @@
   }
   .ulSt {
     justify-content: center;
+  }
+  .ulSt2 {
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+  .links {
+    text-align: center;
+    margin-bottom: 2.5rem;
   }
 }

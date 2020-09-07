@@ -38,8 +38,8 @@ const GithubSlides = () => {
   return (
     <>
       <div
-        onMouseEnter={() => setTimeout(handlePrevious, 100)}
-        onMouseLeave={() => setTimeout(handleNext, 100)}
+        onMouseEnter={() => handlePrevious()}
+        onMouseLeave={() => handleNext()}
         onTouchStart={() => handleNext()}
       >
         <Img fluid={node.childImageSharp.fluid} key={node.id} alt={node.name} />

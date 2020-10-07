@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Portfolio',
+    title: 'Ignas Portfolio',
+    author: 'Ignas',
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

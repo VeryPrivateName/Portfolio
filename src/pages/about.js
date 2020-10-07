@@ -1,13 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-
-import Layout from '../components/Layout';
-import ScrollArrow from '../components/ScrollArrow';
-// import peep from '../images/peep.svg';
-
-// import peep4 from '../images/IGNO AVATAR-04.png';
-
 import { IconContext } from 'react-icons';
 import {
   FaChild,
@@ -19,6 +12,10 @@ import {
   FaGithub,
   FaEnvelope,
 } from 'react-icons/fa';
+
+import Layout from '../components/Layout';
+import Head from '../components/Head';
+import ScrollArrow from '../components/ScrollArrow';
 import Style from './about.module.scss';
 
 export const pageQuery = graphql`
@@ -34,9 +31,10 @@ export const pageQuery = graphql`
   }
 `;
 
-const about = props => {
+const About = props => {
   return (
     <Layout>
+    <Head title='About'/>
       <div className={Style.grid}>
         <h1 className={Style.mtitle}>Web Developer</h1>
         <div className={Style.gridIntro}>
@@ -83,13 +81,14 @@ const about = props => {
             </div>
           </div>
         </div>
-        <h2 className={Style.mtitle}>Skills</h2>
+        <h2 className={Style.mtitle}>My Toolbox</h2>
         <div className={Style.skills}>
           <div className={Style.wrapper}>
             <h3 className={Style.m1}>Front End</h3>
             <ul className={Style.ulSt}>
               <li className={Style.box}>HTML</li>
               <li className={Style.box}>CSS</li>
+              <li className={Style.box}>SCSS</li>
               <li className={Style.box}>JavaScript</li>
               <li className={Style.box}>React</li>
               <li className={Style.box}>Gatsby JS</li>
@@ -101,34 +100,25 @@ const about = props => {
           <div className={Style.wrapper}>
             <h3 className={Style.m1}>Back End</h3>
             <ul className={Style.ulSt}>
+              <li className={Style.box}>Node.js</li>
               <li className={Style.box}>MongoDB</li>
               <li className={Style.box}>GraphQL</li>
-              <li className={Style.box}>Node.js</li>
               <li className={Style.box}>Express.js</li>
+              <li className={Style.box}>REST API</li>
             </ul>
           </div>
           <div className={Style.wrapper}>
             <h3 className={Style.m1}>Other</h3>
             <ul className={Style.ulSt}>
-              <li className={Style.box}>Google Analytics</li>
-              <li className={Style.box}>Backlinks</li>
               <li className={Style.box}>Puppeteer</li>
               <li className={Style.box}>GitHub / Git</li>
               <li className={Style.box}>Adobe Photoshop / XD</li>
+              <li className={Style.box}>GIMP</li>
               <li className={Style.box}>Blender</li>
               <li className={Style.box}>DaVinci Resolve</li>
+              <li className={Style.box}>Google Analytics</li>
+              <li className={Style.box}>Backlinks</li>
               <li className={Style.box}>Microsoft Office</li>
-            </ul>
-          </div>
-          <div className={Style.wrapper}>
-            <h3 className={Style.m1}>Soft Skills</h3>
-            <ul className={Style.ulSt}>
-              <li className={Style.box}>Project Management</li>
-              <li className={Style.box}>Business Ethics</li>
-              <li className={Style.box}>Customer Service</li>
-              <li className={Style.box}>Marketing</li>
-              <li className={Style.box}>Business Strategy</li>
-              <li className={Style.box}>Sales</li>
             </ul>
           </div>
         </div>
@@ -172,4 +162,4 @@ const about = props => {
   );
 };
 
-export default about;
+export default About;

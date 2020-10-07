@@ -1,14 +1,23 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
-import Link from 'gatsby-plugin-transition-link';
-// import { Link } from 'gatsby';
 
 import navStyle from './nav.module.scss';
-import '../App.scss';
-import Logo from '../images/logo.png';
-// import FaceLogo from '../components/scene/FaceLogo';
 
 const Nav = () => {
+  const data = useStaticQuery(graphql`
+    query MyQuery {
+      file(relativePath: { eq: "faceLogoPNG.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300, quality: 100) {
+            ...GatsbyImageSharpFluid_tracedSVG
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+    }
+  `);
   return (
     <div className={navStyle.container}>
       <div className={navStyle.navItem1}>
@@ -23,17 +32,12 @@ const Nav = () => {
         </AniLink>
       </div>
       <div className={navStyle.navItem2}>
-        <AniLink
-          className={navStyle.linkStyle}
-          // cover
-          fade
-          duration={0.5}
-          to='/'
-          // direction='up'
-          // bg='#023B54'
-        >
-          <img src={Logo} alt='logo' className={navStyle.imgNav}></img>
-          {/* <FaceLogo /> */}
+        <AniLink className={navStyle.linkStyle} fade duration={0.5} to='/'>
+          <Img
+            className={navStyle.imgNav}
+            fluid={data.file.childImageSharp.fluid}
+            alt='logo'
+          />
         </AniLink>
       </div>
       <div className={navStyle.navItem3}>

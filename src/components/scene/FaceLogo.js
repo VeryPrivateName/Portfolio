@@ -1,26 +1,27 @@
 import React, { Suspense } from 'react';
 import { Canvas, Dom } from 'react-three-fiber';
 
-import FaceV1 from './Facev1';
+import Geisha2 from './Geisha2';
 
 const FaceLogo = () => {
   return (
     <>
-      <Canvas pixelRatio={window.devicePixelRatio}>
-        <ambientLight intensity={1.1} />
-        <pointLight intensity={1} position={[-10, -25, -10]} />
+      <Canvas
+        gl={{ alpha: true }}
+        camera={{ position: [0, 0, 6], fov: 70 }}
+        pixelRatio={window.devicePixelRatio}
+      >
+        <ambientLight intensity={0.6} />
+        <pointLight intensity={1.6} position={[-10, -25, -10]} />
         <spotLight
-          intensity={1.05}
+          intensity={1.35}
           angle={Math.PI / 8}
           position={[25, 25, 15]}
-          shadow-mapSize-width={2048}
-          shadow-mapSize-height={2048}
         />
         <Suspense
           fallback={<Dom center className='loading' children='Loading...' />}
         >
-          {/* <Scene /> */}
-          <FaceV1 />
+          <Geisha2 />
         </Suspense>
       </Canvas>
     </>

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
+import Head from '../components/Head';
 import ScrollArrow from '../components/ScrollArrow';
 
 import Style from './projects.module.scss';
@@ -15,6 +16,7 @@ import { FaEye, FaGithub } from 'react-icons/fa';
 const projects = () => {
   return (
     <Layout>
+    <Head title='Projects'/>
       <div className={Style.grid}>
         <h1 className={Style.mtitle}>My Work</h1>
         <div className={Style.gradient}>
@@ -25,15 +27,19 @@ const projects = () => {
             <div className={Style.projectInfo}>
               {/* idet linkus i koda ir site */}
               <h3 className={Style.mbT}>rcpdcp.com</h3>
+              <p className={Style.mb}>
+                A functional and minimalistic portfolio website for an artist /
+                content creative. "rcpdcp", which can be deciphered as
+                recomposer / decomposer, is a dual web universe of a visual
+                artist/(copy) writer-music journalist.
+              </p>
+              <ul className={Style.ulSt}>
+                <li className={Style.box}>HTML</li>
+                <li className={Style.box}>SCSS</li>
+                <li className={Style.box}>JavaScript</li>
+                <li className={Style.box}>Netlify</li>
+              </ul>
               <div className={Style.links}>
-                <a
-                  href='https://github.com/VeryPrivateName'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className={Style.outLink}
-                >
-                  <FaGithub className={Style.icon} />
-                </a>
                 <a
                   href='https://github.com/VeryPrivateName'
                   target='_blank'
@@ -43,18 +49,6 @@ const projects = () => {
                   <FaEye className={Style.icon} />
                 </a>
               </div>
-              <p className={Style.mb}>
-                A functional and minimalistic portfolio website for an
-                artist/content creative. "rcpdcp", which can be deciphered as
-                recomposer/decomposer, is a dual web universe of a visual
-                artist/(copy)writer-music journalist.
-              </p>
-              <ul className={Style.ulSt}>
-                <li className={Style.box}>HTML</li>
-                <li className={Style.box}>SCSS</li>
-                <li className={Style.box}>JavaScript</li>
-                <li className={Style.box}>Netlify</li>
-              </ul>
             </div>
           </div>
         </div>
@@ -76,6 +70,24 @@ const projects = () => {
                 <li className={Style.box}>Github API</li>
                 <li className={Style.box}>Netlify</li>
               </ul>
+              <div className={Style.links}>
+                <a
+                  href='https://github.com/VeryPrivateName'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={Style.outLink}
+                >
+                  <FaGithub className={Style.icon} />
+                </a>
+                <a
+                  href='https://github.com/VeryPrivateName'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={Style.outLink}
+                >
+                  <FaEye className={Style.icon} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -99,6 +111,24 @@ const projects = () => {
                 <li className={Style.box}>GSAP</li>
                 <li className={Style.box}>Netlify</li>
               </ul>
+              <div className={Style.links}>
+                <a
+                  href='https://github.com/VeryPrivateName'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={Style.outLink}
+                >
+                  <FaGithub className={Style.icon} />
+                </a>
+                <a
+                  href='https://github.com/VeryPrivateName'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={Style.outLink}
+                >
+                  <FaEye className={Style.icon} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -123,6 +153,24 @@ const projects = () => {
                 <li className={Style.box}>Express.js</li>
                 <li className={Style.box}>Heroku</li>
               </ul>
+              <div className={Style.links}>
+                <a
+                  href='https://github.com/VeryPrivateName'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={Style.outLink}
+                >
+                  <FaGithub className={Style.icon} />
+                </a>
+                <a
+                  href='https://github.com/VeryPrivateName'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={Style.outLink}
+                >
+                  <FaEye className={Style.icon} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -133,6 +181,7 @@ const projects = () => {
             </div>
             <div className={Style.projectInfo}>
               <h3 className={Style.mbT}>Task logger</h3>
+
               <p className={Style.mb}>
                 Imitation of internal IT department app for logging tasks. Main
                 objective of the project was to learn the differences between
@@ -145,6 +194,24 @@ const projects = () => {
                 <li className={Style.box}>React</li>
                 <li className={Style.box}>JSON-Server</li>
               </ul>
+              <div className={Style.links}>
+                <a
+                  href='https://github.com/VeryPrivateName'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={Style.outLink}
+                >
+                  <FaGithub className={Style.icon} />
+                </a>
+                <a
+                  href='https://github.com/VeryPrivateName'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={Style.outLink}
+                >
+                  <FaEye className={Style.icon} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -155,6 +222,7 @@ const projects = () => {
             </div>
             <div className={Style.projectInfo}>
               <h3 className={Style.mbT}>Cyberspacewhat.com</h3>
+
               <p className={Style.mb}>
                 One of my the very first webpages done for affiliate business.
                 The general theme of the website being personal privacy.
@@ -167,6 +235,16 @@ const projects = () => {
                 <li className={Style.box}>Bootstrap</li>
                 <li className={Style.box}>Netlify</li>
               </ul>
+              <div className={Style.links}>
+                <a
+                  href='https://github.com/VeryPrivateName'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className={Style.outLink}
+                >
+                  <FaEye className={Style.icon} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -174,7 +252,7 @@ const projects = () => {
           <div className={Style.projectCurrent}>
             <div className={Style.projectInfo}>
               <h3 className={Style.mbTT}>This portfolio is built with:</h3>
-              <ul className={Style.ulSt2}>
+              <ul className={Style.ulSt}>
                 <li className={Style.box}>HTML</li>
                 <li className={Style.box}>SCSS</li>
                 <li className={Style.box}>Gatsby.js</li>
@@ -182,6 +260,16 @@ const projects = () => {
                 <li className={Style.box}>GraphQL</li>
                 <li className={Style.box}>Netlify</li>
               </ul>
+            </div>
+            <div className={Style.links}>
+              <a
+                href='https://github.com/VeryPrivateName'
+                target='_blank'
+                rel='noopener noreferrer'
+                className={Style.outLink}
+              >
+                <FaGithub className={Style.icon} />
+              </a>
             </div>
           </div>
         </div>

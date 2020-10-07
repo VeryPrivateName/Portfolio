@@ -37,6 +37,7 @@ const SpaceSlides = () => {
 
   return (
     <>
+      {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
       <div
         onMouseEnter={() => setTimeout(handlePrevious, 100)}
         onMouseLeave={() => setTimeout(handleNext, 100)}

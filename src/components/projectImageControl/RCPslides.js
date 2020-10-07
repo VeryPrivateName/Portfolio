@@ -39,6 +39,7 @@ const RCPslides = () => {
 
   return (
     <>
+      {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
       <div
         onMouseEnter={() => handlePrevious()}
         onMouseLeave={() => handleNext()}

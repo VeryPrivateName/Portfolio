@@ -44,7 +44,7 @@
 }
 
 .imgNav {
-  width: 100px;
+  width: 85px;
 }
 
 .activeNav {
@@ -65,9 +65,7 @@
   // }
 }
 @media screen and (max-width: 1380px) {
-  .navItem2 {
-    height: 135px;
-  }
+
 }
 @media screen and (max-width: 800px) {
   .container {
@@ -79,15 +77,28 @@
       'n1 . n3';
     justify-items: center;
     align-items: center;
-    padding: 1rem 0 0 0;
+    padding: 2rem 0 0 0;
     font-size: 1.5rem;
+    width: 100%;
   }
   .activeNav {
     border: none;
     color: #af0426;
     padding: 0rem;
   }
-  .navItem2 {
-    height: 110px;
+  .imgNav {
+    width: 65px;
   }
+  .navItem1 {
+    grid-area: n1;
+    margin-left: 4rem;
+  }
+  .navItem2 {
+    grid-area: n2;
+  }
+  .navItem3 {
+    grid-area: n3;
+    margin-right: 4rem;
+  }
+
 }

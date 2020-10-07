@@ -1,15 +1,14 @@
 import React from 'react';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
-// import Link from 'gatsby-plugin-transition-link';
-
-// import { Link } from 'gatsby';
 import '../App.scss';
-
 import FaceLogo from '../components/scene/FaceLogo';
+import Head from '../components/Head';
 
 const IndexPage = () => {
   return (
+    <>
+    <Head title='Home' />
     <div className='grid-2 text-dark'>
       <div className='holder'>
         <h1 className='xlarge pBottom colorpaint'>Ignas</h1>
@@ -29,6 +28,7 @@ const IndexPage = () => {
         <FaceLogo />
       </div>
     </div>
+    </>
   );
 };
 

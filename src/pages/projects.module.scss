@@ -133,13 +133,12 @@
 .projectImage {
   align-self: start;
 }
-// .projectInfo {
-//   width: 100%;
-//   align-self: start;
-// }
+.projectInfo {
+  width: 100%;
+}
 .icon {
   margin-right: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   transition: color 0.4s ease-in;
 }
 .icon:hover {
@@ -161,7 +160,13 @@
 .mbT {
   margin-bottom: 1rem;
   font-weight: 800;
+  font-family: 'Righteous', cursive;
   // color: var(--dark-color);
+}
+.mbTT {
+  margin-bottom: 1rem;
+  font-weight: 800;
+  font-family: 'Righteous', cursive;
 }
 
 .mtitle {
@@ -180,25 +185,10 @@
   list-style: none;
   display: flex;
   flex-flow: row wrap;
+  margin: 1rem 0rem;
 }
 
 .ulSt li::before {
-  content: '\25A3';
-  // color: var(--light-color);
-  font-weight: bold;
-  display: inline-block;
-  width: 1rem;
-  margin-right: 0.35rem;
-  // margin-left: 0.85rem;
-}
-
-.ulSt2 {
-  list-style: none;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.ulSt2 li::before {
   content: '\25A3';
   // color: var(--light-color);
   font-weight: bold;
@@ -283,13 +273,12 @@
   }
   .projectInfo {
     align-self: center;
+    width: 100%;
+
   }
   .ulSt {
     justify-content: center;
-  }
-  .ulSt2 {
-    margin-bottom: 2rem;
-    justify-content: center;
+    margin-bottom: 2.5rem;
   }
   .links {
     text-align: center;

@@ -25,7 +25,6 @@
   border-radius: 5px;
 }
 
-
 .card p {
   margin-bottom: 0.5rem;
 }
@@ -37,10 +36,11 @@
 
 .wrapper {
   margin: 3rem 0rem;
-  max-width: 750px;
+  max-width: 780px;
 }
 .skills {
-  padding: 0 1rem 0 3rem;
+  padding: 0 1rem 0 4rem;
+  max-width: 780px;
 }
 .wrapperBorder {
   max-width: 780px;
@@ -67,9 +67,11 @@
   margin-right: 0.35rem;
   // margin-left: 0.85rem;
 }
+
 .box {
   margin-right: 1rem;
 }
+
 .mtitle {
   padding: 6rem 0rem;
   margin: 3rem 0rem;
@@ -86,6 +88,8 @@
 .m1 {
   margin-bottom: 1rem;
   color: #000002;
+  font-family: 'Righteous', cursive;
+  font-weight: 500;
 }
 .m2 {
   margin-bottom: 2rem;
@@ -114,6 +118,7 @@
   border-radius: 5px;
   text-align: left;
 }
+
 .gridyCenter {
   justify-self: center;
   color: #000002;

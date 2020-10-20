@@ -1,3 +1,3 @@
 <p align="center">
-  test
+  My personal portfolio. Built with Gatsby JS and React Three Fiber. 
 </p>

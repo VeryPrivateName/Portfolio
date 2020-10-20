@@ -30,19 +30,13 @@ const SpaceSlides = () => {
   //Minus 1 for array offset from 0
   const length = allFile.edges.length - 1;
   const { node } = allFile.edges[index];
-  const handleNext = () =>
+  const handleNext = () => {
     index === length ? setIndex(0) : setIndex(index + 1);
-  const handlePrevious = () =>
-    index === 0 ? setIndex(length) : setIndex(index - 1);
-
+  };
   return (
     <>
       {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
-      <div
-        onMouseEnter={() => setTimeout(handlePrevious, 100)}
-        onMouseLeave={() => setTimeout(handleNext, 100)}
-        onTouchStart={() => handleNext()}
-      >
+      <div onClick={() => handleNext()} onKeyDown={() => handleNext()}>
         <Img fluid={node.childImageSharp.fluid} key={node.id} alt={node.name} />
       </div>
     </>

@@ -17,7 +17,7 @@
   padding-bottom: 3.45rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 4px rgb(158, 155, 155) inset, -1px -1px 4px rgb(158, 155, 155) inset;
   position: relative;
   justify-self: center;
   max-width: 780px;
@@ -129,7 +129,13 @@
   font-weight: 900;
 }
 .colorspanMail {
-  color: var(--primary-color);
+  color: #af0426;
+  // color: #AF0426;
+  font-weight: 850;
+  font-size: 1.1rem;
+}
+.colorspanMail2 {
+  color: #000002;
   // color: #AF0426;
   font-weight: 850;
   font-size: 1.1rem;

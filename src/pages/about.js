@@ -34,7 +34,7 @@ export const pageQuery = graphql`
 const About = props => {
   return (
     <Layout>
-    <Head title='About'/>
+      <Head title='About' />
       <div className={Style.grid}>
         <h1 className={Style.mtitle}>Web Developer</h1>
         <div className={Style.gridIntro}>
@@ -51,30 +51,30 @@ const About = props => {
                 <div className={Style.gridy}>
                   <FaChild className={Style.gridyCenter} />
                   <p>
-                    <span className={Style.colorspan}>Who:</span> Ignas,
-                    multi-purpose geek based in Berlin.
+                    <span className={Style.colorspan}>.Who</span> Ignas, a
+                    multi-purpose geek based in Berlin
                   </p>
-                  <FaFire className={Style.gridyCenter} />
-                  <p>
-                    <span className={Style.colorspan}>Passions:</span> all
-                    things technology, music, history, gym, traveling and - very
-                    much so - video games.
-                  </p>
+
                   <FaCrosshairs className={Style.gridyCenter} />
                   <p>
-                    <span className={Style.colorspan}>Motto:</span> life is too
-                    short for bad websites.
+                    <span className={Style.colorspan}>.Motto</span> life is too
+                    short for bad websites
                   </p>
                   <FaSignature className={Style.gridyCenter} />
                   <p>
-                    <span className={Style.colorspan}>Languages:</span> English,
-                    Lithuanian, Russian and some German.
+                    <span className={Style.colorspan}>.Languages</span> English,
+                    Lithuanian, Russian and some German
+                  </p>
+                  <FaFire className={Style.gridyCenter} />
+                  <p>
+                    <span className={Style.colorspan}>.Passions</span> all
+                    things technology, music, history, gym, traveling and - very
+                    much so - video games
                   </p>
                   <FaChess className={Style.gridyCenter} />
                   <p>
-                    <span className={Style.colorspan}>Personality:</span>{' '}
-                    hungry, determined, passionate, punctual, adaptive and
-                    collaborative.
+                    <span className={Style.colorspan}>.Personality</span>{' '}
+                    determined, creative, adaptive, punctual and considerate
                   </p>
                 </div>
               </IconContext.Provider>
@@ -146,13 +146,16 @@ const About = props => {
               </a>
               {/* Pakeist emailo adresa */}
               <a
-                href='https://github.com/VeryPrivateName'
+                href='mailto:ignas@ignas.link'
                 target='_blank'
                 rel='noopener noreferrer'
               >
                 <FaEnvelope />
               </a>
-              <p className={Style.colorspanMail}>ignas@ignas.link</p>
+              <p>
+                <span className={Style.colorspanMail}>ignas</span>
+                <span className={Style.colorspanMail2}>@ignas.link</span>
+              </p>
             </div>
           </IconContext.Provider>
         </div>

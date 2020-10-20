@@ -1,43 +1,22 @@
-import React, { useRef, useState } from 'react';
-import { useLoader, useFrame } from 'react-three-fiber';
+import React, { Suspense, useState, useRef } from 'react';
+import { Canvas, useLoader } from 'react-three-fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { draco } from 'drei';
-import { useSpring, animated } from 'react-spring/three';
+import { OrbitControls, draco, Html } from 'drei';
 
-export default function Model() {
+function Model({ url, props }) {
   const group = useRef();
   const { nodes, materials } = useLoader(
     GLTFLoader,
-    '/DARK2.glb',
+    url,
     draco('/draco-gltf/')
   );
-
-  useFrame(() => {
-    if (active) {
-      group.current.rotation.y += 0.0;
-      group.current.rotation.x += 0.0;
-      group.current.rotation.z += 0.0;
-    } else {
-      group.current.rotation.y += 0.01;
-      group.current.rotation.x += 0.0001;
-      group.current.rotation.z += 0.0001;
-    }
-  });
-
-  const [hovered, setHover] = useState(false);
   const [active, setActive] = useState(false);
-  const propsMask = useSpring({
-    color: hovered ? '#063861' : 'grey',
-  });
-  const propsEye = useSpring({
-    color: hovered ? 'grey' : '#094A64',
-  });
 
   return (
     <group
       ref={group}
-      onPointerOver={() => setHover(true)}
-      onPointerOut={() => setHover(false)}
+      {...props}
+      dispose={null}
       onClick={() => setActive(!active)}
     >
       <mesh
@@ -46,21 +25,21 @@ export default function Model() {
         position={[-1.73, 0.32, -0.82]}
         rotation={[-3, 0, -3]}
       >
-        <animated.meshStandardMaterial
+        <meshStandardMaterial
           attach='material'
-          color={propsEye.color}
+          color={active ? 'grey' : '#023B54'}
         />
-        {/* kaires akys */}
+        {/* left eye */}
       </mesh>
       <mesh
         material={materials['Matcap.003']}
         geometry={nodes.Sphere002.geometry}
       >
-        <animated.meshStandardMaterial
+        <meshStandardMaterial
           attach='material'
-          color={propsEye.color}
+          color={active ? 'grey' : '#023B54'}
         />
-        {/* desines akys */}
+        {/* right eye */}
       </mesh>
       <mesh
         material={materials['Matcap.001']}
@@ -70,22 +49,22 @@ export default function Model() {
         position={[-1.73, 0.32, -0.82]}
         rotation={[-3, 0, -3]}
       >
-        <animated.meshStandardMaterial
+        <meshStandardMaterial
           attach='material'
-          color={propsMask.color}
+          color={active ? '#023B54' : 'grey'}
         />
-        {/* pirma kauke */}
+        {/* first mask*/}
       </mesh>
       <mesh
         material={materials['Matcap.001']}
         geometry={nodes.Sphere000.geometry}
         material-metalness={0.6}
       >
-        <animated.meshStandardMaterial
+        <meshStandardMaterial
           attach='material'
-          color={propsMask.color}
+          color={active ? '#023B54' : 'grey'}
         />
-        {/* antra kauke */}
+        {/* second mask */}
       </mesh>
       <mesh
         material={materials['Matcap.002']}
@@ -100,5 +79,40 @@ export default function Model() {
         geometry={nodes.Plane001.geometry}
       />
     </group>
+  );
+}
+
+export default function NewFull() {
+  return (
+    <>
+      <Canvas gl={{ alpha: true }} camera={{ position: [0, 0, 6], fov: 70 }}>
+        <ambientLight intensity={0.6} />
+        <pointLight intensity={1.6} position={[-10, -25, -10]} />
+        <spotLight
+          intensity={1.35}
+          angle={Math.PI / 8}
+          position={[25, 25, 15]}
+        />
+        <Suspense
+          fallback={
+            <Html center scaleFactor={15}>
+              Loading...
+            </Html>
+          }
+        >
+          <Model url='/LatestMask.glb' />
+        </Suspense>
+        <OrbitControls
+          autoRotate
+          enablePan={false}
+          enableZoom={false}
+          enableDamping
+          dampingFactor={0.5}
+          rotateSpeed={1}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+        />
+      </Canvas>
+    </>
   );
 }

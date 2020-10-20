@@ -30,21 +30,13 @@ const RCPslides = () => {
   //Minus 1 for array offset from 0
   const length = allFile.edges.length - 1;
   const { node } = allFile.edges[index];
-  const handleNext = () =>
+  const handleNext = () => {
     index === length ? setIndex(0) : setIndex(index + 1);
-  const handleNextMob = () =>
-    index === length ? setIndex(0) : setIndex(index + 1);
-  const handlePrevious = () =>
-    index === 0 ? setIndex(length) : setIndex(index - 1);
-
+  };
   return (
     <>
       {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
-      <div
-        onMouseEnter={() => handlePrevious()}
-        onMouseLeave={() => handleNext()}
-        onTouchStart={() => handleNextMob()}
-      >
+      <div onClick={() => handleNext()} onKeyDown={() => handleNext()}>
         <Img fluid={node.childImageSharp.fluid} key={node.id} alt={node.name} />
       </div>
     </>

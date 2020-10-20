@@ -8,7 +8,7 @@ import navStyle from './nav.module.scss';
 const Nav = () => {
   const data = useStaticQuery(graphql`
     query MyQuery {
-      file(relativePath: { eq: "faceLogoPNG.png" }) {
+      file(relativePath: { eq: "faceLogo.png" }) {
         childImageSharp {
           fluid(maxWidth: 300, quality: 100) {
             ...GatsbyImageSharpFluid_tracedSVG

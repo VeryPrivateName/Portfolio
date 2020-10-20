@@ -57,8 +57,6 @@ typings/
 # gatsby files
 .cache/
 public
-.prettierrc
-.prettierignore
 
 # Mac files
 .DS_Store

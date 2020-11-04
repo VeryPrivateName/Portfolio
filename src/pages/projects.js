@@ -252,8 +252,8 @@ const projects = () => {
               </p>
               <p className={Style.mb}>
                 <span className={Style.blackpaint}>.Why</span> It was a
-                comissioned work which I used as an opportunity to learn key
-                design principles
+                comissioned work which I used as an opportunity to learn key UI
+                principles
               </p>
               <ul className={Style.ulSt}>
                 <li className={Style.box}>HTML</li>

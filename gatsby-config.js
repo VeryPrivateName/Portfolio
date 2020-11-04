@@ -29,13 +29,6 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        color: `#023B54`,
-      },
-    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -48,6 +41,5 @@ module.exports = {
         icon: 'src/images/icon.png',
       },
     },
-    'gatsby-plugin-offline',
   ],
 };
